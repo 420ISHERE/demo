@@ -1,0 +1,141 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Rubik", sans-serif;
+}
+.main-container {
+  /* height: 100vh; */
+  /* border: 2px solid red; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.checkout-container {
+  /* border: 2px solid red; */
+  width: 40%;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  transform: translateY(60px);
+  padding: 1rem;
+  border-radius: 20px;
+}
+.checkout-container h2 {
+  text-align: center;
+  margin-bottom: 1rem;
+  font-weight: 500;
+  color: rgb(25 135 84);
+}
+.card-details {
+  display: flex;
+  gap: 5px;
+  justify-content: space-between;
+  /* border: 2px solid green; */
+}
+.seva-details {
+  width: 55%;
+  background-color: #f8f9fa;
+  /* border: 2px solid green; */
+  padding: 0.5rem;
+  border-radius: 15px;
+}
+.seva-details h3,
+.seva-details h4 {
+  font-size: 0.9rem;
+  font-weight: 600;
+  margin-top: 0.2rem;
+  margin-left: 1rem;
+  color: #faaf19;
+}
+.seva-details h4 {
+  color: black;
+}
+
+.seva-details .title {
+  margin-left: 1rem;
+  margin-top: 0.6rem;
+}
+.sub-title-1 {
+  margin-left: 1rem;
+  margin-top: 1.2rem;
+  font-size: 0.9rem;
+}
+.sub-title-2 {
+  margin-left: 1rem;
+  font-size: 0.9rem;
+  margin-top: 0.2rem;
+}
+
+.payment-details {
+  /* border: 2px solid red; */
+  width: 45%;
+  padding: 1rem;
+  display: flex;
+  align-content: center;
+  justify-content: center;
+}
+.amount {
+  font-weight: 600;
+  display: inline-block;
+  margin-left: 0.5rem;
+}
+.payment-details-inner {
+  align-self: center;
+  /* transform: translateY(-50%); */
+  /* border: 2px solid red; */
+  width: 100%;
+}
+.logo {
+  width: 90%;
+  margin: auto;
+}
+.logo img {
+  width: 100%;
+  border-radius: 10px;
+}
+
+.name-label {
+  font-weight: 600;
+  margin-bottom: 0.2rem;
+}
+.mobile-label {
+  font-weight: 600;
+  margin-top: 1rem;
+}
+.btn-donate {
+  margin: auto;
+  margin-top: 2rem;
+  text-align: center;
+}
+.btn-donate button {
+  border: none;
+  outline: none;
+  padding: 0.8rem 1.2rem;
+  background-color: #faaf19;
+  font-weight: 500;
+  border-radius: 25px;
+  font-size: 1rem;
+  width: 100%;
+  cursor: pointer;
+}
+
+@media only screen and (max-width: 980px) {
+  .card-details {
+    flex-wrap: wrap;
+  }
+  .checkout-container {
+    width: 90%;
+    transform: translateY(40px);
+  }
+
+  .seva-details {
+    width: 100%;
+  }
+  .payment-details {
+    width: 100%;
+  }
+  .name-label,
+  .mobile-label,
+  .name {
+    margin-left: 0.4rem;
+  }
+}

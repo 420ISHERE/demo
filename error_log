@@ -1,0 +1,7 @@
+[09-Jul-2024 10:25:10 UTC] PHP Warning:  require(/home/x1w8gqios3v5/public_html/../vendor/autoload.php): Failed to open stream: No such file or directory in /home/x1w8gqios3v5/public_html/index.php on line 13
+[09-Jul-2024 10:25:10 UTC] PHP Fatal error:  Uncaught Error: Failed opening required '/home/x1w8gqios3v5/public_html/../vendor/autoload.php' (include_path='.:/opt/alt/php83/usr/share/pear:/opt/alt/php83/usr/share/php:/usr/share/pear:/usr/share/php') in /home/x1w8gqios3v5/public_html/index.php:13
+Stack trace:
+#0 {main}
+  thrown in /home/x1w8gqios3v5/public_html/index.php on line 13
+[09-Jul-2024 12:18:46 UTC] PHP Fatal error:  Cannot redeclare App\Http\Controllers\SubPagesController::terms() in /home/x1w8gqios3v5/public_html/app/Http/Controllers/SubPagesController.php on line 40
+[23-Jul-2025 19:34:32 UTC] PHP Fatal error:  Cannot redeclare App\Http\Controllers\BlogController::radhaAshtami() in /home/x1w8gqios3v5/public_html/app/Http/Controllers/BlogController.php on line 22

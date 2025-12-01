@@ -1,0 +1,728 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>HKM</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="" name="keywords">
+    <meta content="" name="description">
+
+    <!-- Favicon -->
+    <link href="img/favicon.ico" rel="icon">
+
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@700&family=Open+Sans:wght@400;500;600&display=swap"
+        rel="stylesheet">
+
+    <!-- Icon Font Stylesheet -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+
+    <!-- Libraries Stylesheet -->
+    <link href="lib/animate/animate.min.css" rel="stylesheet">
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+    <link href="lib/lightbox/css/lightbox.min.css" rel="stylesheet">
+
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Template Stylesheet -->
+    <link href="css/style.css" rel="stylesheet">
+</head>
+
+<body>
+    <!-- Spinner Start -->
+    <div id="spinner"
+        class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
+        <div class="spinner-border text-primary" role="status" style="width: 3rem; height: 3rem;"></div>
+    </div>
+    <!-- Spinner End -->
+
+
+    <?php include ("header.php"); ?>
+
+
+
+    <!-- Carousel Start -->
+    <div class="container-fluid px-0 mb-5">
+        <div id="header-carousel" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img class="w-100" src="hkm assets/festival_banner7178719-Photoroom.jpg" alt="Image">
+                    <div class="carousel-caption">
+                        <div class="container">
+                            <div class="row justify-content-start">
+                                <div class="col-lg-8 text-start">
+                                    <p class="fs-4 text-white"></p>
+                                    <h1 class="display-1 text-white mb-5 animated slideInRight"></h1>
+                                    <a href="https://pages.razorpay.com/pl_ODYS8l5AS5XGuG/view" target="_blank"
+                                        class="btn btn-secondary rounded-pill py-3 px-5 animated slideInRight">Donate
+                                        Now</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img class="w-100" src="hkm assets/10/banner_1437335.jpg" alt="Image">
+                    <div class="carousel-caption">
+                        <div class="container">
+                            <div class="row justify-content-end">
+                                <div class="col-lg-8 text-end">
+                                    <!-- <p class="fs-4 text-white">Welcome to our dairy farm</p>
+                                    <h1 class="display-1 text-white mb-5 animated slideInRight">Best Organic Dairy
+                                        Products</h1> -->
+                                    <a href=""
+                                        class="btn btn-secondary rounded-pill py-3 px-5 animated slideInLeft">Explore
+                                        More</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img class="w-100" src="hkm assets/banner_2071500-Photoroom.jpg" alt="Image">
+                    <div class="carousel-caption">
+                        <div class="container">
+                            <div class="row justify-content-end">
+                                <div class="col-lg-8 text-end">
+                                    <!-- <p class="fs-4 text-white">Welcome to our dairy farm</p>
+                                    <h1 class="display-1 text-white mb-5 animated slideInRight">Best Organic Dairy
+                                        Products</h1> -->
+                                    <a href=""
+                                        class="btn btn-secondary rounded-pill py-3 px-5 animated slideInLeft">Explore
+                                        More</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#header-carousel" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#header-carousel" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+    </div>
+    <!-- Carousel End -->
+
+
+    <!-- About Start -->
+    <div id="about" class="container-xxl py-5">
+        <div class="container">
+            <div class="row g-5 align-items-end">
+                <div class="col-lg-6">
+                    <div class="row g-2">
+                        <!-- <div class="col-6 position-relative wow fadeIn" data-wow-delay="0.7s">
+                            <div class="about-experience bg-secondary rounded">
+                                <h1 class="display-1 mb-0">hkjkhk</h1>
+                                <small class="fs-5 fw-bold"></small>
+                            </div>
+                        </div> -->
+                        <div class="col-6 wow fadeIn" data-wow-delay="0.1s">
+                            <img class="img-fluid rounded" src="hkm assets/10/narsingh.jpg">
+                        </div>
+                        <div class="col-6 wow fadeIn" data-wow-delay="0.1s">
+                            <img class="img-fluid rounded" src="hkm assets/10/1.jpg">
+                        </div>
+                        <div class="col-6 wow fadeIn" data-wow-delay="0.3s">
+                            <img class="img-fluid rounded" src="hkm assets/12/event_cover_image2442791.jpg">
+                        </div>
+                        <div class="col-6 wow fadeIn" data-wow-delay="0.5s">
+                            <img class="img-fluid rounded" src="hkm assets/12/event_cover_image5182366.jpg">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 wow fadeIn" data-wow-delay="0.5s">
+                    <p class="section-title bg-white text-start text-primary pe-3">About Us</p>
+                    <h1 class="mb-4">Know About Our History</h1>
+                    <p class="mb-4">The Hare Krishna Movement Dehradun (HKM Dehradun) is a spiritual organization that
+                        aims to gift human society an opportunity for a life of happiness, good health, peace of mind
+                        and all good qualities through God Consciousness.
+
+                        Registered as a trust in 2020 it is spiritually mentored by ISKCON Bangalore. In accordance with
+                        the desire of His Divine Grace A.C. Bhaktivedanta Swami Srila Prabhupada, Founder-Acharya of the
+                        worldwide Hare Krishna Movement.
+                    </p>
+                    <!-- <div class="row g-5 pt-2 mb-5">
+                        <div class="col-sm-6">
+                            <img class="img-fluid mb-4" src="img/service.png" alt="">
+                            <h5 class="mb-3">Dedicated Services</h5>
+                            <span>Clita erat ipsum et lorem et sit, sed stet lorem sit clita</span>
+                        </div>
+                        <div class="col-sm-6">
+                            <img class="img-fluid mb-4" src="img/product.png" alt="">
+                            <h5 class="mb-3">Organic Products</h5>
+                            <span>Clita erat ipsum et lorem et sit, sed stet lorem sit clita</span>
+                        </div>
+                    </div> -->
+                    <a class="btn btn-secondary rounded-pill py-3 px-5" href="">Explore More</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- About End -->
+
+
+
+
+
+
+
+
+    <!-- Service Start -->
+    <div id="program" class="container-xxl py-5">
+        <div class="container">
+            <div class="text-center mx-auto pb-4 wow fadeInUp" data-wow-delay="0.1s" style="max-width: 500px;">
+                <p class="section-title bg-white text-center text-primary px-3">Our Services</p>
+                <h1 class="mb-5">Program That We Offer </h1>
+            </div>
+            <div class="row gy-5 gx-4">
+                <div class="col-lg-4 col-md-6 pt-5 wow fadeInUp" data-wow-delay="0.1s">
+                    <div class="service-item d-flex h-100">
+                        <div class="service-img">
+                            <img class="img-fluid" src="hkm assets/1-qd.jpg" alt="">
+                        </div>
+                        <div class="service-text p-5 pt-0">
+                            <div class="service-icon">
+                                <img class="img-fluid rounded-circle" src="hkm assets/1-qd.jpg" alt="">
+                            </div>
+                            <h5 class="mb-3">Gita Life</h4>
+                                <p class="mb-4">Bhagavad Gita Sessions on Sunday evening, 4:30 pm to 6:30 pm. Each
+                                    session delves into a few verses of the Bhagavad Gita followed by a Q&A. The
+                                    sessions conclude with exuberant Kirtans and Maha-Prasadam.</p>
+                                <a class="btn btn-square rounded-circle" href=""><i
+                                        class="bi bi-chevron-double-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 pt-5 wow fadeInUp" data-wow-delay="0.3s">
+                    <div class="service-item d-flex h-100">
+                        <div class="service-img">
+                            <img class="img-fluid" src="hkm assets/2-qd.jpg" alt="">
+                        </div>
+                        <div class="service-text p-5 pt-0">
+                            <div class="service-icon">
+                                <img class="img-fluid rounded-circle" src="hkm assets/2-qd.jpg" alt="">
+                            </div>
+                            <h5 class="mb-3">ICVK (For kids)</h5>
+                            <p class="mb-4">India culture and values for kids – ICVK – offers a spiritual dimension to
+                                the thoughts and actions of our children. HKM Dehradun runs various courses, culture
+                                camps throughout the year both offline and online.</p>
+                            <a class="btn btn-square rounded-circle" href=""><i
+                                    class="bi bi-chevron-double-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 pt-5 wow fadeInUp" data-wow-delay="0.5s">
+                    <div class="service-item d-flex h-100">
+                        <div class="service-img">
+                            <img class="img-fluid" src="hkm assets/3-qd.jpg">
+                        </div>
+                        <div class=" service-text p-5 pt-0">
+                            <div class="service-icon">
+                                <img class="img-fluid rounded-circle" src="hkm assets/3-qd.jpg">
+                            </div>
+                            <h5 class=" mb-3">FOLK (For Youth)</h5>
+                            <p class="mb-4">Youth wing of the Hare Krishna Movement, Dehradun. It was formed with a
+                                vision to empower the youth by facilitating them to practice the sacred principles
+                                of
+                                spirituality in their daily lives and help them attain real happiness.</p>
+                            <a class="btn btn-square rounded-circle" href=""><i
+                                    class="bi bi-chevron-double-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 col-md-6 pt-5 wow fadeInUp" data-wow-delay="0.5s">
+                    <div class="service-item d-flex h-100">
+                        <div class="service-img">
+                            <img class="img-fluid"
+                                src="hkm assets/thumbs/1s-qdsj30lh53zt9acpymbghjueo1tmi8zxm8wn0tjixs.webp">
+                        </div>
+                        <div class=" service-text p-5 pt-0">
+                            <div class="service-icon">
+                                <img class="img-fluid rounded-circle"
+                                    src="hkm assets/thumbs/1s-qdsj30lh53zt9acpymbghjueo1tmi8zxm8wn0tjixs.webp">
+                            </div>
+                            <h5 class=" mb-3">Anna-daan Program</h5>
+                            <p class="mb-4">Extend support for our free food distribution initiative.</p>
+                            <a class="btn btn-square rounded-circle" href=""><i
+                                    class="bi bi-chevron-double-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 col-md-6 pt-5 wow fadeInUp" data-wow-delay="0.5s">
+                    <div class="service-item d-flex h-100">
+                        <div class="service-img">
+                            <img class="img-fluid"
+                                src="hkm assets/thumbs/harinaam-sq-qdsj30lh53zt9acpymbghjueo1tmi8zxm8wn0tjixs.webp">
+                        </div>
+                        <div class=" service-text p-5 pt-0">
+                            <div class="service-icon">
+                                <img class="img-fluid rounded-circle"
+                                    src="hkm assets/thumbs/harinaam-sq-qdsj30lh53zt9acpymbghjueo1tmi8zxm8wn0tjixs.webp">
+                            </div>
+                            <h5 class=" mb-3">House Kirtan</h5>
+                            <p class="mb-4">Host kirtan and katha at your home inviting Sadhus.</p>
+                            <a class="btn btn-square rounded-circle" href=""><i
+                                    class="bi bi-chevron-double-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Service End -->
+    <!-- Banner Start -->
+    <div class="text-center mx-auto wow fadeInUp" data-wow-delay="0.1s" style="max-width: 500px;">
+        <p class="section-title bg-white text-center text-primary px-3">Other Programs</p>
+        <!-- <h1 class="mb-5">Offer Seva</h1> -->
+    </div>
+    <div class="container-fluid banner my-5 py-5" data-parallax="scroll" data-image-src="hkm assets/Capture.JPG">
+        <div class="container py-5">
+            <div class="row g-5">
+                <div class="col-lg-6 wow fadeIn" data-wow-delay="0.3s">
+                    <div class="row g-4 align-items-center">
+                        <div class="col-sm-4">
+                            <img class="img-fluid rounded" src="hkm assets/kimson-doan-AZMmUy2qL6A-unsplash.jpg" alt="">
+                        </div>
+                        <div class="col-sm-8">
+                            <h2 class="text-white mb-3">For Youth</h2>
+                            <p class="text-white mb-4">The Youth Empowerment Club nurtures young minds with Vedic wisdom
+                                through workshops in arts, science, and philosophy, fostering a progressive community
+                                for over two decades.</p>
+                            <a class="btn btn-secondary rounded-pill py-2 px-4" href="youth.php">Read More</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 wow fadeIn" data-wow-delay="0.5s">
+                    <div class="row g-4 align-items-center">
+                        <div class="col-sm-4">
+                            <img class="img-fluid rounded" src="hkm assets/rishu-bhosale-8Y0Ql4SjGfY-unsplash.jpg"
+                                alt="">
+                        </div>
+                        <div class="col-sm-8">
+                            <h2 class="text-white mb-3">Dham Yatra</h2>
+                            <p class="text-white mb-4">A spiritual pilgrimage undertaken by devotees to visit sacred
+                                sites and temples, seeking blessings and spiritual fulfillment.</p>
+                            <a class="btn btn-secondary rounded-pill py-2 px-4" href="">Read More</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Banner End -->
+
+
+    <!-- Gallery Start -->
+    <!-- <div class="container-xxl py-5 px-0">
+        <div class="row g-0">
+            <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
+                <div class="row g-0">
+                    <div class="col-12">
+                        <a class="d-block" href="img/gallery-5.jpg" data-lightbox="gallery">
+                            <img class="img-fluid" src="img/gallery-5.jpg" alt="">
+                        </a>
+                    </div>
+                    <div class="col-12">
+                        <a class="d-block" href="img/gallery-1.jpg" data-lightbox="gallery">
+                            <img class="img-fluid" src="img/gallery-1.jpg" alt="">
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
+                <div class="row g-0">
+                    <div class="col-12">
+                        <a class="d-block" href="img/gallery-2.jpg" data-lightbox="gallery">
+                            <img class="img-fluid" src="img/gallery-2.jpg" alt="">
+                        </a>
+                    </div>
+                    <div class="col-12">
+                        <a class="d-block" href="img/gallery-6.jpg" data-lightbox="gallery">
+                            <img class="img-fluid" src="img/gallery-6.jpg" alt="">
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
+                <div class="row g-0">
+                    <div class="col-12">
+                        <a class="d-block" href="img/gallery-7.jpg" data-lightbox="gallery">
+                            <img class="img-fluid" src="img/gallery-7.jpg" alt="">
+                        </a>
+                    </div>
+                    <div class="col-12">
+                        <a class="d-block" href="img/gallery-3.jpg" data-lightbox="gallery">
+                            <img class="img-fluid" src="img/gallery-3.jpg" alt="">
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.7s">
+                <div class="row g-0">
+                    <div class="col-12">
+                        <a class="d-block" href="img/gallery-4.jpg" data-lightbox="gallery">
+                            <img class="img-fluid" src="img/gallery-4.jpg" alt="">
+                        </a>
+                    </div>
+                    <div class="col-12">
+                        <a class="d-block" href="img/gallery-8.jpg" data-lightbox="gallery">
+                            <img class="img-fluid" src="img/gallery-8.jpg" alt="">
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div> -->
+    <!-- Gallery End -->
+
+
+    <!-- Product Start -->
+    <div class="container-xxl py-5">
+        <div class="container">
+            <div class="text-center mx-auto wow fadeInUp" data-wow-delay="0.1s" style="max-width: 500px;">
+                <p class="section-title bg-white text-center text-primary px-3">Join Us in The Service of Lord</p>
+                <h1 class="mb-5">Offer Seva</h1>
+            </div>
+            <div class="row gx-4">
+                <div class="col-md-4 col-lg-4 col-xl-4 wow fadeInUp" data-wow-delay="0.1s">
+                    <div class="product-item">
+                        <div class="position-relative">
+                            <img class="img-fluid" src="hkm assets/12/seva_page_banner4410940-1024x682.jpeg" alt="">
+                            <div class="product-overlay">
+                                <a class="btn btn-square btn-secondary rounded-circle m-1" href=""><i
+                                        class="bi bi-link"></i></a>
+                                <a class="btn btn-square btn-secondary rounded-circle m-1" href=""><i
+                                        class="bi bi-cart"></i></a>
+                            </div>
+                        </div>
+                        <div class="text-center p-4">
+                            <a class="d-block h5" href="https://pages.razorpay.com/pl_ODYS8l5AS5XGuG/view"
+                                target="_blank">Gita Jayanti</a>
+                            <span class="text-primary me-1">Donate Now</span>
+                            <!-- <span class="text-decoration-line-through">$29.00</span> -->
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4 col-lg-4 col-xl-4 wow fadeInUp" data-wow-delay="0.5s">
+                    <div class="product-item">
+                        <div class="position-relative">
+                            <img class="img-fluid" src="hkm assets/12/seva_page_banner3678982.jpg" alt="">
+                            <div class="product-overlay">
+                                <a class="btn btn-square btn-secondary rounded-circle m-1" href=""><i
+                                        class="bi bi-link"></i></a>
+                                <a class="btn btn-square btn-secondary rounded-circle m-1" href=""><i
+                                        class="bi bi-cart"></i></a>
+                            </div>
+                        </div>
+                        <div class="text-center p-4">
+                            <a class="d-block h5" href="https://pages.razorpay.com/pl_ODYS8l5AS5XGuG/view"
+                                target="_blank">Nityananda
+                                Trayodasi</a>
+                            <span class="text-primary me-1">Donate Now</span>
+                            <!-- <span class="text-decoration-line-through">$29.00</span> -->
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 col-lg-4 col-xl-4 wow fadeInUp" data-wow-delay="0.7s">
+                    <div class="product-item">
+                        <div class="position-relative">
+                            <img class="img-fluid" src="hkm assets/12/new.jpg" alt="">
+                            <div class="product-overlay">
+                                <a class="btn btn-square btn-secondary rounded-circle m-1" href=""><i
+                                        class="bi bi-link"></i></a>
+                                <a class="btn btn-square btn-secondary rounded-circle m-1" href=""><i
+                                        class="bi bi-cart"></i></a>
+                            </div>
+                        </div>
+                        <div class="text-center p-4">
+                            <a class="d-block h5" href="https://pages.razorpay.com/pl_ODYS8l5AS5XGuG/view"
+                                target="_blank">Sri Gaura
+                                Purnima</a>
+                            <span class="text-primary me-1">Donate Now</span>
+                            <!-- <span class="text-decoration-line-through">$29.00</span> -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Product End -->
+
+    <!-- Product Start -->
+    <div class="container-xxl py-5">
+        <div class="container">
+            <div class="text-center mx-auto wow fadeInUp" data-wow-delay="0.1s" style="max-width: 500px;">
+                <p class="section-title bg-white text-center text-primary px-3">Join Us in The Service of Lord</p>
+                <h1 class="mb-5">Upcoming Events</h1>
+            </div>
+            <div class="row gx-4">
+                <div class="col-md-4 col-lg-4 col-xl-4 wow fadeInUp" data-wow-delay="0.1s">
+                    <div class="product-item">
+                        <div class="position-relative">
+                            <img class="img-fluid" src="hkm assets/12/narsingh.jpg" alt="">
+                            <div class="product-overlay">
+                                <a class="btn btn-square btn-secondary rounded-circle m-1" href=""><i
+                                        class="bi bi-link"></i></a>
+                                <a class="btn btn-square btn-secondary rounded-circle m-1" href=""><i
+                                        class="bi bi-cart"></i></a>
+                            </div>
+                        </div>
+                        <div class="text-center p-4">
+                            <a class="d-block h5" href="">Narsingh Jayanti</a>
+                            <span class="text-primary me-1">22-05-2024</span>
+                            <!-- <span class="text-decoration-line-through">$29.00</span> -->
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4 col-lg-4 col-xl-4 wow fadeInUp" data-wow-delay="0.5s">
+                    <div class="product-item">
+                        <div class="position-relative">
+                            <img class="img-fluid" src="hkm assets/12/seva_page_banner3678982.jpg" alt="">
+                            <div class="product-overlay">
+                                <a class="btn btn-square btn-secondary rounded-circle m-1" href=""><i
+                                        class="bi bi-link"></i></a>
+                                <a class="btn btn-square btn-secondary rounded-circle m-1" href=""><i
+                                        class="bi bi-cart"></i></a>
+                            </div>
+                        </div>
+                        <div class="text-center p-4">
+                            <a class="d-block h5" href="">Budh Purnima</a>
+                            <span class="text-primary me-1">23-05-2024</span>
+                            <!-- <span class="text-decoration-line-through">$29.00</span> -->
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <!-- Product End -->
+
+
+    <!-- Team Start -->
+    <!-- <div class="container-xxl py-5">
+        <div class="container">
+            <div class="text-center mx-auto wow fadeInUp" data-wow-delay="0.1s" style="max-width: 500px;">
+                <p class="section-title bg-white text-center text-primary px-3">Our Team</p>
+                <h1 class="mb-5">Experienced Team Members</h1>
+            </div>
+            <div class="row g-4">
+                <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
+                    <div class="team-item rounded p-4">
+                        <img class="img-fluid rounded mb-4" src="img/team-1.jpg" alt="">
+                        <h5>Adam Crew</h5>
+                        <p class="text-primary">Founder</p>
+                        <div class="d-flex justify-content-center">
+                            <a class="btn btn-square btn-outline-secondary rounded-circle mx-1" href=""><i
+                                    class="fab fa-facebook-f"></i></a>
+                            <a class="btn btn-square btn-outline-secondary rounded-circle mx-1" href=""><i
+                                    class="fab fa-twitter"></i></a>
+                            <a class="btn btn-square btn-outline-secondary rounded-circle mx-1" href=""><i
+                                    class="fab fa-instagram"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
+                    <div class="team-item rounded p-4">
+                        <img class="img-fluid rounded mb-4" src="img/team-2.jpg" alt="">
+                        <h5>Doris Jordan</h5>
+                        <p class="text-primary">Veterinarian</p>
+                        <div class="d-flex justify-content-center">
+                            <a class="btn btn-square btn-outline-secondary rounded-circle mx-1" href=""><i
+                                    class="fab fa-facebook-f"></i></a>
+                            <a class="btn btn-square btn-outline-secondary rounded-circle mx-1" href=""><i
+                                    class="fab fa-twitter"></i></a>
+                            <a class="btn btn-square btn-outline-secondary rounded-circle mx-1" href=""><i
+                                    class="fab fa-instagram"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
+                    <div class="team-item rounded p-4">
+                        <img class="img-fluid rounded mb-4" src="img/team-3.jpg" alt="">
+                        <h5>Jack Dawson</h5>
+                        <p class="text-primary">Farmer</p>
+                        <div class="d-flex justify-content-center">
+                            <a class="btn btn-square btn-outline-secondary rounded-circle mx-1" href=""><i
+                                    class="fab fa-facebook-f"></i></a>
+                            <a class="btn btn-square btn-outline-secondary rounded-circle mx-1" href=""><i
+                                    class="fab fa-twitter"></i></a>
+                            <a class="btn btn-square btn-outline-secondary rounded-circle mx-1" href=""><i
+                                    class="fab fa-instagram"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div> -->
+    <!-- Team End -->
+
+
+    <!-- Testimonial Start -->
+    <!-- <div class="container-xxl py-5">
+        <div class="container">
+            <div class="text-center mx-auto wow fadeInUp" data-wow-delay="0.1s" style="max-width: 500px;">
+                <p class="section-title bg-white text-center text-primary px-3">Testimonial</p>
+                <h1 class="mb-5">What People Say About Our Dairy Farm</h1>
+            </div>
+            <div class="row g-5 align-items-center">
+                <div class="col-lg-5 wow fadeInUp" data-wow-delay="0.1s">
+                    <div class="testimonial-img">
+                        <img class="img-fluid animated pulse infinite" src="img/testimonial-1.jpg" alt="">
+                        <img class="img-fluid animated pulse infinite" src="img/testimonial-2.jpg" alt="">
+                        <img class="img-fluid animated pulse infinite" src="img/testimonial-3.jpg" alt="">
+                        <img class="img-fluid animated pulse infinite" src="img/testimonial-4.jpg" alt="">
+                    </div>
+                </div>
+                <div class="col-lg-7 wow fadeInUp" data-wow-delay="0.5s">
+                    <div class="owl-carousel testimonial-carousel">
+                        <div class="testimonial-item">
+                            <img class="img-fluid mb-3" src="img/testimonial-1.jpg" alt="">
+                            <p class="fs-5">Dolores sed duo clita tempor justo dolor et stet lorem kasd labore
+                                dolore
+                                lorem ipsum. At lorem lorem magna ut et, nonumy et labore et tempor diam tempor
+                                erat.
+                            </p>
+                            <h5>Client Name</h5>
+                            <span class="text-primary">Profession</span>
+                        </div>
+                        <div class="testimonial-item">
+                            <img class="img-fluid mb-3" src="img/testimonial-2.jpg" alt="">
+                            <p class="fs-5">Dolores sed duo clita tempor justo dolor et stet lorem kasd labore
+                                dolore
+                                lorem ipsum. At lorem lorem magna ut et, nonumy et labore et tempor diam tempor
+                                erat.
+                            </p>
+                            <h5>Client Name</h5>
+                            <span class="text-primary">Profession</span>
+                        </div>
+                        <div class="testimonial-item">
+                            <img class="img-fluid mb-3" src="img/testimonial-3.jpg" alt="">
+                            <p class="fs-5">Dolores sed duo clita tempor justo dolor et stet lorem kasd labore
+                                dolore
+                                lorem ipsum. At lorem lorem magna ut et, nonumy et labore et tempor diam tempor
+                                erat.
+                            </p>
+                            <h5>Client Name</h5>
+                            <span class="text-primary">Profession</span>
+                        </div>
+                        <div class="testimonial-item">
+                            <img class="img-fluid mb-3" src="img/testimonial-4.jpg" alt="">
+                            <p class="fs-5">Dolores sed duo clita tempor justo dolor et stet lorem kasd labore
+                                dolore
+                                lorem ipsum. At lorem lorem magna ut et, nonumy et labore et tempor diam tempor
+                                erat.
+                            </p>
+                            <h5>Client Name</h5>
+                            <span class="text-primary">Profession</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div> -->
+    <!-- Testimonial End -->
+    <!-- Features Start -->
+    <div class="container-xxl py-5">
+        <div class="container">
+            <div class="row g-5 align-items-center">
+                <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.1s">
+                    <p class="section-title bg-white text-start text-primary pe-3">Latest Blogs</p>
+                    <h1 class="mb-4">Annadanam Mahadanam</h1>
+                    <p class="mb-4">Supporting initiatives to provide food for the needy and temple visitors is a
+                        compassionate endeavor that not only addresses hunger but also fosters a sense of community and
+                        service.
+                    </p>
+                    <p><i class="fa fa-check text-primary me-3"></i>High Quality Food</p>
+                    <p><i class="fa fa-check text-primary me-3"></i>Fresh Ingredients</p>
+                    <p><i class="fa fa-check text-primary me-3"></i>Industry Standard Hygiene</p>
+                    <a class="btn btn-secondary rounded-pill py-3 px-5 mt-3"
+                        href="https://pages.razorpay.com/pl_ODYS8l5AS5XGuG/view" target="_blank">Donate</a>
+                </div>
+                <div class="col-lg-6">
+                    <div class="rounded overflow-hidden">
+                        <div class="row g-0">
+                            <div class="col-sm-6 wow fadeIn" data-wow-delay="0.1s">
+                                <div class="text-center bg-primary py-5 px-4">
+                                    <img class="img-fluid mb-4" src="hkm assets/icons/cooking.png" alt=""
+                                        style="height: 80px;">
+                                    <h1 class="display-6 text-white" data-toggle="counter-up">2.89</h1>
+                                    <span class="fs-5 fw-semi-bold text-secondary">Crore</span>
+                                    <span class="fs-5 fw-semi-bold text-secondary">Meals served</span>
+                                </div>
+                            </div>
+                            <div class="col-sm-6 wow fadeIn" data-wow-delay="0.3s">
+                                <div class="text-center bg-secondary py-5 px-4">
+                                    <img class="img-fluid mb-4" src="hkm assets/icons/people.png" alt=""
+                                        style="height: 80px;">
+                                    <h1 class="display-6" data-toggle="counter-up">4,500</h1>
+                                    <span class="fs-5 fw-semi-bold text-primary">People served daily</span>
+                                </div>
+                            </div>
+                            <div class="col-sm-6 wow fadeIn" data-wow-delay="0.5s">
+                                <div class="text-center bg-secondary py-5 px-4">
+                                    <img class="img-fluid mb-4" src="hkm assets/icons/rupee.png" alt=""
+                                        style="height: 65px;">
+                                    <h1 class="display-6" data-toggle="counter-up">35</h1>
+                                    <span class="fs-5 fw-semi-bold text-primary">Cost per meal</span>
+                                </div>
+                            </div>
+                            <div class="col-sm-6 wow fadeIn" data-wow-delay="0.7s">
+                                <div class="text-center bg-primary py-5 px-4">
+                                    <img class="img-fluid mb-4" src="hkm assets/icons/time-left.png" alt=""
+                                        style="height: 65px;">
+                                    <h1 class="display-6 text-white" data-toggle="counter-up">4 </h1>
+                                    <span class="fs-5 fw-semi-bold text-secondary">Hours meal prep time</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Features End -->
+
+
+    <!-- Footer Start -->
+    <?php include ("footer.php"); ?>
+
+    <!-- Footer End -->
+
+
+
+
+    <!-- Back to Top -->
+    <a href="#" class="btn btn-lg btn-primary btn-lg-square rounded-circle back-to-top"><i
+            class="bi bi-arrow-up"></i></a>
+
+
+    <!-- JavaScript Libraries -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="lib/wow/wow.min.js"></script>
+    <script src="lib/easing/easing.min.js"></script>
+    <script src="lib/waypoints/waypoints.min.js"></script>
+    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+    <script src="lib/counterup/counterup.min.js"></script>
+    <script src="lib/parallax/parallax.min.js"></script>
+    <script src="lib/lightbox/js/lightbox.min.js"></script>
+
+    <!-- Template Javascript -->
+    <script src="js/main.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,112 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Lato", sans-serif;
+}
+
+:root {
+  font-size: 62.5%;
+}
+.main_container{
+ display: flex;
+
+ justify-content: center;
+
+ height: 100vh;
+}
+.child_container{
+  width: 40%;
+  margin-top: 4rem;
+}
+.main-logo{
+  /* border: 2px solid red; */
+  width: 125px;
+  margin: auto;
+}
+.logo-section h2{
+  text-align: center;
+  margin-top: 1rem;
+  font-size: 2rem;
+  
+}
+.fa-check-circle{
+ 
+  color: #40F46D;
+  font-size: 3rem;
+  margin-bottom: 1rem;
+
+
+}
+.main-logo img{
+  width: 100%;
+  border-radius: 10px;
+}
+.payment-details{
+  /* border: 2px solid red; */
+  width: 80%;
+  margin: auto;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  margin-top: 1rem;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  border-radius: 15px;
+}
+.title-section{
+  margin-bottom: 2.6rem;
+}
+.title-section h3{
+
+  text-align: center;
+  font-size: 1.6rem;
+  color: #40F46D;
+}
+.title-section h4{
+
+  text-align: center;
+  margin-top: 0.5rem;
+  font-size: 1.5rem ;
+}
+.donor{
+  display: flex;
+  justify-content: space-evenly;
+  margin-top: 1.4rem;
+  /* border: 2px solid red; */
+  
+}
+.donor div{
+  width: 40%;
+  
+}
+.donor h2,.donor p{
+  text-align: left;
+  /* border: 2px solid green; */
+}
+.donor p{
+  text-align: center;
+  font-size: 1.6rem;
+  
+}
+.btn-home{
+  text-align: center;
+  margin-top: 2.4rem;
+}
+.btn-home button{
+  border: none;
+  outline: none;
+  background-color: #f39c27;
+  padding: 1rem 2rem;
+  font-weight: 700;
+  border-radius: 20px;
+  cursor: pointer;
+}
+
+@media only screen and (max-width: 968px){
+.child_container{
+    width: 100%;
+}
+.payment-details{
+    width: 90%;
+}
+
+}
