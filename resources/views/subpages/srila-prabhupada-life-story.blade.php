@@ -39,7 +39,7 @@ Founder-Ācārya of ISKCON. Learn how he spread Krishna Consciousness worldwide 
 
 <style>
     .life-section {
-        padding: 20px 0;
+        padding: 80px 0;
     }
 
     .life-section:nth-child(even) {
@@ -102,7 +102,7 @@ Founder-Ācārya of ISKCON. Learn how he spread Krishna Consciousness worldwide 
 </section>
 
 <!-- Youth and Married Life -->
-<section class="life-section" data-aos="fade-left">
+<section class="life-section" data-aos="fade-up">
     <div class="container">
         <h2 class="life-title text-center">Youth and Married Life</h2>
         <p class="life-content">
@@ -129,7 +129,7 @@ Founder-Ācārya of ISKCON. Learn how he spread Krishna Consciousness worldwide 
 </section>
 
 <!-- Retired Life -->
-<section class="life-section" data-aos="fade-left">
+<section class="life-section" data-aos="fade-up">
     <div class="container">
         <h2 class="life-title text-center">Retired Life</h2>
         <p class="life-content">
@@ -172,7 +172,7 @@ Founder-Ācārya of ISKCON. Learn how he spread Krishna Consciousness worldwide 
 </section>
 
 <!-- Literary Contributions -->
-<section class="life-section" data-aos="fade-left">
+<section class="life-section" data-aos="fade-up">
     <div class="container">
         <h2 class="life-title text-center">Literary Contributions</h2>
         <p class="life-content">
