@@ -11,73 +11,72 @@
 
 
 <style>
-.gatsby-image-wrapper noscript [data-main-image] {
-    opacity: 1 !important
-}
+    .gatsby-image-wrapper noscript [data-main-image] {
+        opacity: 1 !important
+    }
 
-.gatsby-image-wrapper [data-placeholder-image] {
-    opacity: 0 !important
-}
+    .gatsby-image-wrapper [data-placeholder-image] {
+        opacity: 0 !important
+    }
+
+    .gatsby-image-wrapper {
+        position: relative;
+        overflow: hidden
+    }
+
+    .gatsby-image-wrapper picture.object-fit-polyfill {
+        position: static !important
+    }
+
+    .gatsby-image-wrapper img {
+        bottom: 0;
+        height: 100%;
+        left: 0;
+        margin: 0;
+        max-width: none;
+        padding: 0;
+        position: absolute;
+        right: 0;
+        top: 0;
+        width: 100%;
+        object-fit: cover
+    }
+
+    .gatsby-image-wrapper [data-main-image] {
+        opacity: 0;
+        transform: translateZ(0);
+        transition: opacity .25s linear;
+        will-change: opacity
+    }
+
+    .gatsby-image-wrapper-constrained {
+        display: inline-block;
+        vertical-align: top
+    }
 </style>
-<style>
-.gatsby-image-wrapper {
-    position: relative;
-    overflow: hidden
-}
-
-.gatsby-image-wrapper picture.object-fit-polyfill {
-    position: static !important
-}
-
-.gatsby-image-wrapper img {
-    bottom: 0;
-    height: 100%;
-    left: 0;
-    margin: 0;
-    max-width: none;
-    padding: 0;
-    position: absolute;
-    right: 0;
-    top: 0;
-    width: 100%;
-    object-fit: cover
-}
-
-.gatsby-image-wrapper [data-main-image] {
-    opacity: 0;
-    transform: translateZ(0);
-    transition: opacity .25s linear;
-    will-change: opacity
-}
-
-.gatsby-image-wrapper-constrained {
-    display: inline-block;
-    vertical-align: top
-}
-</style>
 
 
 
 
 <style>
-.custom-donation-card {
-    background-color: #fff;
-    border-radius: 22px;
-    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
+    .custom-donation-card {
+        background-color: #fff;
+        border-radius: 22px;
+        box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
 
-    transition: all 0.3s ease;
-}
+        transition: all 0.3s ease;
+    }
 
-.custom-donation-card:hover {
-    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.15);
-    transform: translateY(-5px);
-}
+    .custom-donation-card:hover {
+        box-shadow: 0 6px 16px rgba(0, 0, 0, 0.15);
+        transform: translateY(-5px);
+    }
 
-/* .custom-donation-card .donation-image {
+    /* .custom-donation-card .donation-image {
     width: 100%;
     height: 200px;
     overflow: hidden;
@@ -92,7 +91,7 @@
     object-fit: cover;
 } */
 
-/* .custom-donation-card .card-body {
+    /* .custom-donation-card .card-body {
     display: flex;
     flex-direction: column;
     height: 100%;
@@ -100,7 +99,7 @@
 
   } */
 
-/* .custom-donation-card .btn {
+    /* .custom-donation-card .btn {
     background-color: #ecdd5e;
   }
 
@@ -111,205 +110,296 @@
 </style>
 
 <style>
-.contact-section {
-    padding-left: 40px;
-    /* Add left padding */
-    padding-right: 40px;
-    /* Add right padding */
-    padding-top: 40px;
-    padding-bottom: 40px;
-}
-
-@media (min-width: 768px) {
     .contact-section {
-        padding-left: 80px;
-        padding-right: 80px;
+        padding-left: 40px;
+        /* Add left padding */
+        padding-right: 40px;
+        /* Add right padding */
+        padding-top: 40px;
+        padding-bottom: 40px;
     }
-}
+
+    @media (min-width: 768px) {
+        .contact-section {
+            padding-left: 80px;
+            padding-right: 80px;
+        }
+    }
 </style>
 <!-- CSS for Mobile Optimization -->
 <style>
-.banner-img {
-    width: 100%;
-    height: 600px;
-    /* Desktop default */
-    object-fit: cover;
-}
-
-@media (max-width: 768px) {
     .banner-img {
-        height: 350px;
-        /* Smaller height for tablets and mobiles */
-    }
-}
-
-@media (max-width: 480px) {
-    .banner-img {
-        height: 250px;
-        /* Mobile-friendly height */
-    }
-}
-
-@keyframes criss-cross-left {
-    0% {
-        left: -20px;
-        width: 20px;
-        height: 20px;
+        width: 100%;
+        height: 600px;
+        /* Desktop default */
+        object-fit: cover;
     }
 
-    50% {
-        left: 50%;
-        width: 20px;
-        height: 20px;
+    @media (max-width: 768px) {
+        .banner-img {
+            height: 350px;
+            /* Smaller height for tablets and mobiles */
+        }
     }
 
-    100% {
-        left: 50%;
-        width: 375px;
-        /* 1.5 * 250px (default width from original SCSS) */
-        height: 375px;
-    }
-}
-
-@keyframes criss-cross-right {
-    0% {
-        right: -20px;
-        width: 20px;
-        height: 20px;
+    @media (max-width: 480px) {
+        .banner-img {
+            height: 250px;
+            /* Mobile-friendly height */
+        }
     }
 
-    50% {
-        right: 50%;
-        width: 20px;
-        height: 20px;
+    @keyframes criss-cross-left {
+        0% {
+            left: -20px;
+            width: 20px;
+            height: 20px;
+        }
+
+        50% {
+            left: 50%;
+            width: 20px;
+            height: 20px;
+        }
+
+        100% {
+            left: 50%;
+            width: 375px;
+            /* 1.5 * 250px (default width from original SCSS) */
+            height: 375px;
+        }
     }
 
-    100% {
-        right: 50%;
-        width: 375px;
-        height: 375px;
-    }
-}
+    @keyframes criss-cross-right {
+        0% {
+            right: -20px;
+            width: 20px;
+            height: 20px;
+        }
 
-@keyframes criss-cross-left {
-    0% {
-        left: -15px;
-        width: 15px;
-        height: 15px;
-    }
+        50% {
+            right: 50%;
+            width: 20px;
+            height: 20px;
+        }
 
-    50% {
-        left: 50%;
-        width: 15px;
-        height: 15px;
-    }
-
-    100% {
-        left: 50%;
-        width: 180px;
-        height: 180px;
-    }
-}
-
-@keyframes criss-cross-right {
-    0% {
-        right: -15px;
-        width: 15px;
-        height: 15px;
+        100% {
+            right: 50%;
+            width: 375px;
+            height: 375px;
+        }
     }
 
-    50% {
-        right: 50%;
-        width: 15px;
-        height: 15px;
+    @keyframes criss-cross-left {
+        0% {
+            left: -15px;
+            width: 15px;
+            height: 15px;
+        }
+
+        50% {
+            left: 50%;
+            width: 15px;
+            height: 15px;
+        }
+
+        100% {
+            left: 50%;
+            width: 180px;
+            height: 180px;
+        }
     }
 
-    100% {
-        right: 50%;
-        width: 180px;
-        height: 180px;
-    }
-}
+    @keyframes criss-cross-right {
+        0% {
+            right: -15px;
+            width: 15px;
+            height: 15px;
+        }
 
-@keyframes criss-cross-left {
-    0% {
-        left: -15px;
-        width: 15px;
-        height: 15px;
-    }
+        50% {
+            right: 50%;
+            width: 15px;
+            height: 15px;
+        }
 
-    50% {
-        left: 50%;
-        width: 15px;
-        height: 15px;
-    }
-
-    100% {
-        left: 50%;
-        width: 180px;
-        height: 180px;
-    }
-}
-
-@keyframes criss-cross-right {
-    0% {
-        right: -15px;
-        width: 15px;
-        height: 15px;
+        100% {
+            right: 50%;
+            width: 180px;
+            height: 180px;
+        }
     }
 
-    50% {
-        right: 50%;
-        width: 15px;
-        height: 15px;
+    @keyframes criss-cross-left {
+        0% {
+            left: -15px;
+            width: 15px;
+            height: 15px;
+        }
+
+        50% {
+            left: 50%;
+            width: 15px;
+            height: 15px;
+        }
+
+        100% {
+            left: 50%;
+            width: 180px;
+            height: 180px;
+        }
     }
 
-    100% {
-        right: 50%;
-        width: 180px;
-        height: 180px;
-    }
-}
+    @keyframes criss-cross-right {
+        0% {
+            right: -15px;
+            width: 15px;
+            height: 15px;
+        }
 
-@keyframes criss-cross-left {
-    0% {
-        left: -10px;
-        width: 10px;
-        height: 10px;
-    }
+        50% {
+            right: 50%;
+            width: 15px;
+            height: 15px;
+        }
 
-    50% {
-        left: 50%;
-        width: 10px;
-        height: 10px;
-    }
-
-    100% {
-        left: 50%;
-        width: 180px;
-        height: 180px;
-    }
-}
-
-@keyframes criss-cross-right {
-    0% {
-        right: -10px;
-        width: 10px;
-        height: 10px;
+        100% {
+            right: 50%;
+            width: 180px;
+            height: 180px;
+        }
     }
 
-    50% {
-        right: 50%;
-        width: 10px;
-        height: 10px;
+    @keyframes criss-cross-left {
+        0% {
+            left: -10px;
+            width: 10px;
+            height: 10px;
+        }
+
+        50% {
+            left: 50%;
+            width: 10px;
+            height: 10px;
+        }
+
+        100% {
+            left: 50%;
+            width: 180px;
+            height: 180px;
+        }
     }
 
-    100% {
-        right: 50%;
-        width: 180px;
-        height: 180px;
+    @keyframes criss-cross-right {
+        0% {
+            right: -10px;
+            width: 10px;
+            height: 10px;
+        }
+
+        50% {
+            right: 50%;
+            width: 10px;
+            height: 10px;
+        }
+
+        100% {
+            right: 50%;
+            width: 180px;
+            height: 180px;
+        }
     }
-}
+
+    /* ---------- MOBILE VIEW (≤576px) ---------- */
+    @media (max-width: 576px) {
+
+        /* Show mobile donate button */
+        .donate-btn-mobile {
+            display: block !important;
+            width: 100%;
+            margin-top: 10px;
+            font-weight: bold;
+            background-color: #ffc107;
+            color: #000;
+            border: none;
+        }
+
+        /* Hide hover donate button on mobile */
+        .hover-overlay .donate-btn {
+            display: none !important;
+        }
+    }
+
+    /* Shine animation */
+    @keyframes shine {
+        0% {
+            transform: translateX(-100%);
+        }
+
+        100% {
+            transform: translateX(100%);
+        }
+    }
+
+    /* Mobile styling */
+    @media (max-width: 576px) {
+
+        .donate-btn-mobile {
+            display: block !important;
+            width: 100%;
+            margin-top: 10px;
+            font-weight: bold;
+            background-color: #ffc107;
+            color: #000;
+            border: none;
+            padding: 10px 0;
+            border-radius: 6px;
+            position: relative;
+            overflow: hidden;
+            /* Required for shine */
+        }
+
+        /* Shine overlay for mobile button */
+        .donate-btn-mobile::after {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(120deg, transparent, rgba(255, 255, 255, 0.6), transparent);
+            transform: translateX(-100%);
+            animation: shine 2s infinite;
+        }
+
+        /* Hide desktop hover donate on mobile */
+        .hover-overlay .donate-btn {
+            display: none !important;
+        }
+    }
+
+    /* Desktop */
+    @media (min-width: 577px) {
+        .donate-btn-mobile {
+            display: none !important;
+        }
+
+        .hover-overlay .donate-btn {
+            display: inline-block !important;
+        }
+    }
+
+    @media (max-width:767px),
+    only screen and (min-width:768px)and (max-width:991px) {
+        .navbar-collapse {
+            max-width: 80% !important;
+        }
+
+        .navbar-toggler:focus {
+            box-shadow: none !important;
+            color: #000 !important;
+        }
+    }
 </style>
 
 
@@ -437,6 +527,10 @@
                         <!-- Optional: if you want to show name/price below image as well, else remove this -->
                         Archana Seva
                     </div>
+                    <a href="/checkout/11">
+                        <button class="donate-btn-mobile">Donate</button>
+                    </a>
+
                 </div>
             </div>
 
@@ -461,6 +555,10 @@
                         </div>
                     </div>
                     <div class="card-body-custom">Makhan Mishri Seva</div>
+                    <a href="/checkout/12">
+                        <button class="donate-btn-mobile">Donate</button>
+                    </a>
+
                 </div>
             </div>
 
@@ -485,6 +583,9 @@
                         </div>
                     </div>
                     <div class="card-body-custom">Pushpa Seva</div>
+                    <a href="/checkout/13">
+                        <button class="donate-btn-mobile">Donate</button>
+                    </a>
                 </div>
             </div>
 
@@ -509,6 +610,9 @@
                         </div>
                     </div>
                     <div class="card-body-custom">Abhishekam Seva</div>
+                    <a href="/checkout/14">
+                        <button class="donate-btn-mobile">Donate</button>
+                    </a>
                 </div>
             </div>
 
@@ -533,6 +637,9 @@
                         </div>
                     </div>
                     <div class="card-body-custom">Chappan Bhog Seva</div>
+                    <a href="/checkout/15">
+                        <button class="donate-btn-mobile">Donate</button>
+                    </a>
                 </div>
             </div>
 
@@ -557,6 +664,9 @@
                         </div>
                     </div>
                     <div class="card-body-custom">Prasadam Seva</div>
+                    <a href="/checkout/16">
+                        <button class="donate-btn-mobile">Donate</button>
+                    </a>
                 </div>
             </div>
 
@@ -581,6 +691,9 @@
                         </div>
                     </div>
                     <div class="card-body-custom">Alankara Seva</div>
+                    <a href="/checkout/17">
+                        <button class="donate-btn-mobile">Donate</button>
+                    </a>
                 </div>
             </div>
 
@@ -600,6 +713,9 @@
                         </div>
                     </div>
                     <div class="card-body-custom">Donate Any Amount</div>
+                    <a href="/checkout/10">
+                        <button class="donate-btn-mobile">Donate</button>
+                    </a>
                 </div>
             </div>
 
@@ -622,6 +738,9 @@
                         </div>
                     </div>
                     <div class="card-body-custom">108 Deep Daan</div>
+                    <a href="/checkout/19">
+                        <button class="donate-btn-mobile pill">Donate</button>
+                    </a>
                 </div>
             </div>
 
@@ -1172,340 +1291,340 @@ assets/2/annadaan-image.jpg" sizes="(min-width: 1280px) 1280px, 100vw" />
 </div>
 <script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script>
 <script id="gatsby-script-loader">
-/*<![CDATA[*/
-window.pagePath = "/donate/janmashtami/"; /*]]>*/
+    /*<![CDATA[*/
+    window.pagePath = "/donate/janmashtami/"; /*]]>*/
 </script>
 <script id="gatsby-chunk-mapping">
-window.___chunkMapping =
-    "{\"app\":[\"/app-cc4a7ab7d73ee9791e8b.js\"],\"component---src-pages-404-js\":[\"/component---src-pages-404-js-0bad76a7095c927859e2.js\"],\"component---src-pages-about-js\":[\"/component---src-pages-about-js-b6454310e5dd1faeb3ba.js\"],\"component---src-pages-anna-daan-js\":[\"/component---src-pages-anna-daan-js-97c62534c7c21f1218f5.js\"],\"component---src-pages-annadaan-js\":[\"/component---src-pages-annadaan-js-cee131e25740517f1cde.js\"],\"component---src-pages-ayodhya-annadaan-js\":[\"/component---src-pages-ayodhya-annadaan-js-21df2da31a0ef20cbcf7.js\"],\"component---src-pages-ayodhya-festival-js\":[\"/component---src-pages-ayodhya-festival-js-bb9ffa23e5e84fcbcd34.js\"],\"component---src-pages-become-life-patron-js\":[\"/component---src-pages-become-life-patron-js-45197b375a480ff0c3fe.js\"],\"component---src-pages-blog-js\":[\"/component---src-pages-blog-js-ec808c749182916513aa.js\"],\"component---src-pages-cart-js\":[\"/component---src-pages-cart-js-280277f32d59da9e9967.js\"],\"component---src-pages-contact-js\":[\"/component---src-pages-contact-js-df6014252629946b601b.js\"],\"component---src-pages-donate-akshaya-tritiya-js\":[\"/component---src-pages-donate-akshaya-tritiya-js-8efa06798c5cd72cc907.js\"],\"component---src-pages-donate-dhanteras-js\":[\"/component---src-pages-donate-dhanteras-js-3ed2d11d80e13436c59f.js\"],\"component---src-pages-donate-gaur-purnima-js\":[\"/component---src-pages-donate-gaur-purnima-js-42b8d29bf408b4f2812e.js\"],\"component---src-pages-donate-gaur-purnima-seva-js\":[\"/component---src-pages-donate-gaur-purnima-seva-js-78cbe629b49f3beb441f.js\"],\"component---src-pages-donate-index-js\":[\"/component---src-pages-donate-index-js-acfdb6df9be59734c222.js\"],\"component---src-pages-donate-janmashtami-2024-js\":[\"/component---src-pages-donate-janmashtami-2024-js-91cdae6cf03304803f3f.js\"],\"component---src-pages-donate-janmashtami-js\":[\"/component---src-pages-donate-janmashtami-js-07a954c9c2664aacf51a.js\"],\"component---src-pages-donate-janmashtami-seva-js\":[\"/component---src-pages-donate-janmashtami-seva-js-9f09a0a699622ce21cfe.js\"],\"component---src-pages-donate-janmashtami-special-js\":[\"/component---src-pages-donate-janmashtami-special-js-51f8a272d4dca04c40f3.js\"],\"component---src-pages-donate-kartik-deepotsava-seva-js\":[\"/component---src-pages-donate-kartik-deepotsava-seva-js-63cc520490297ce24e4c.js\"],\"component---src-pages-donate-makar-sankranti-js\":[\"/component---src-pages-donate-makar-sankranti-js-638e6004b51cecf4d1cc.js\"],\"component---src-pages-donate-rama-navami-js\":[\"/component---src-pages-donate-rama-navami-js-3bc437bf456a3cbc14e9.js\"],\"component---src-pages-donate-sri-krishna-janmashtami-js\":[\"/component---src-pages-donate-sri-krishna-janmashtami-js-f6732ca711633a92e210.js\"],\"component---src-pages-donations-js\":[\"/component---src-pages-donations-js-30113bc026a8e4d447d9.js\"],\"component---src-pages-eazypay-index-js\":[\"/component---src-pages-eazypay-index-js-a2db653da403dc53f901.js\"],\"component---src-pages-eazypay-status-js\":[\"/component---src-pages-eazypay-status-js-6a589a48df33dfaf3228.js\"],\"component---src-pages-ekadasi-index-js\":[\"/component---src-pages-ekadasi-index-js-667f01a5572ab41cc499.js\"],\"component---src-pages-feedback-js\":[\"/component---src-pages-feedback-js-fe527c666ba011ce850b.js\"],\"component---src-pages-free-puja-js\":[\"/component---src-pages-free-puja-js-22e6ba35ee3a0fcf580d.js\"],\"component---src-pages-gita-daan-js\":[\"/component---src-pages-gita-daan-js-f9a723461f3e57842ea6.js\"],\"component---src-pages-gita-olympiad-index-js\":[\"/component---src-pages-gita-olympiad-index-js-f97d83b920ab151e35ee.js\"],\"component---src-pages-gita-olympiad-marathi-js\":[\"/component---src-pages-gita-olympiad-marathi-js-ffe44c32cbbd8585dca0.js\"],\"component---src-pages-index-js\":[\"/component---src-pages-index-js-680616bb7ff0bd0f76b1.js\"],\"component---src-pages-pan-js\":[\"/component---src-pages-pan-js-3843c00f6fb1c11c43c9.js\"],\"component---src-pages-pay-js\":[\"/component---src-pages-pay-js-b8a4ad19adee5dc215c2.js\"],\"component---src-pages-payment-index-js\":[\"/component---src-pages-payment-index-js-b97058f319e1ac32b744.js\"],\"component---src-pages-payment-status-js\":[\"/component---src-pages-payment-status-js-497805acee657ddf4ef0.js\"],\"component---src-pages-privacy-policy-js\":[\"/component---src-pages-privacy-policy-js-a827f03f74522cc2f523.js\"],\"component---src-pages-programs-bhagavad-gita-online-sessions-js\":[\"/component---src-pages-programs-bhagavad-gita-online-sessions-js-4450695b070e4e856db0.js\"],\"component---src-pages-programs-daily-bhagavad-gita-js\":[\"/component---src-pages-programs-daily-bhagavad-gita-js-bde849c88444aa57e783.js\"],\"component---src-pages-programs-folk-friends-of-lord-krishna-js\":[\"/component---src-pages-programs-folk-friends-of-lord-krishna-js-bc9d1321758bd2ca4699.js\"],\"component---src-pages-programs-free-bhagavad-gita-js\":[\"/component---src-pages-programs-free-bhagavad-gita-js-4d1c5ca40d6535637e3f.js\"],\"component---src-pages-programs-gita-life-js\":[\"/component---src-pages-programs-gita-life-js-4830e0b1f322b6ad725c.js\"],\"component---src-pages-programs-gita-sessions-js\":[\"/component---src-pages-programs-gita-sessions-js-a28e40a3c86b9ce8d5ff.js\"],\"component---src-pages-programs-icvk-indian-culture-and-values-for-kids-js\":[\"/component---src-pages-programs-icvk-indian-culture-and-values-for-kids-js-f6d751f3bb117b59248e.js\"],\"component---src-pages-programs-icvk-registration-js\":[\"/component---src-pages-programs-icvk-registration-js-b40e86be0f920fe11030.js\"],\"component---src-pages-programs-index-js\":[\"/component---src-pages-programs-index-js-fd212139f674683b00a0.js\"],\"component---src-pages-programs-learn-bhagavad-gita-js\":[\"/component---src-pages-programs-learn-bhagavad-gita-js-fa5e652c838d7f6e7678.js\"],\"component---src-pages-programs-vrjp-gita-sessions-js\":[\"/component---src-pages-programs-vrjp-gita-sessions-js-8be3d01b32cf108f1bcd.js\"],\"component---src-pages-quiz-bg-questions-js\":[\"/component---src-pages-quiz-bg-questions-js-01df12af234c0266b115.js\"],\"component---src-pages-quiz-bg-result-js\":[\"/component---src-pages-quiz-bg-result-js-4021b77bf054ded9da9c.js\"],\"component---src-pages-quiz-bhagavad-gita-js\":[\"/component---src-pages-quiz-bhagavad-gita-js-a5d2e108e25ec4628c22.js\"],\"component---src-pages-register-js\":[\"/component---src-pages-register-js-c84f7073eea1b22330dc.js\"],\"component---src-pages-seva-js\":[\"/component---src-pages-seva-js-53c500c3d3dd5c0272ad.js\"],\"component---src-pages-sp-ashraya-form-index-js\":[\"/component---src-pages-sp-ashraya-form-index-js-91b3b92683ea617243a9.js\"],\"component---src-pages-srila-prabhupada-ashraya-js\":[\"/component---src-pages-srila-prabhupada-ashraya-js-0da12c3ade826ac1fa5c.js\"],\"component---src-pages-srila-prabhupada-js\":[\"/component---src-pages-srila-prabhupada-js-147f62d4540c4b127e0e.js\"],\"component---src-pages-srimad-bhagavatam-js\":[\"/component---src-pages-srimad-bhagavatam-js-92bca82b82c134533e6f.js\"],\"component---src-pages-terms-and-conditions-js\":[\"/component---src-pages-terms-and-conditions-js-1ff83cb5c1ec70b77aff.js\"],\"component---src-pages-yatras-ayodhya-js\":[\"/component---src-pages-yatras-ayodhya-js-f3523efd5d4a546401cb.js\"],\"component---src-pages-yatras-index-js\":[\"/component---src-pages-yatras-index-js-5cf89454708b31d3f4bf.js\"],\"component---src-templates-blog-detail-js\":[\"/component---src-templates-blog-detail-js-8824876335e5b4825965.js\"],\"component---src-templates-seva-js\":[\"/component---src-templates-seva-js-05790c886555bb182786.js\"]}";
+    window.___chunkMapping =
+        "{\"app\":[\"/app-cc4a7ab7d73ee9791e8b.js\"],\"component---src-pages-404-js\":[\"/component---src-pages-404-js-0bad76a7095c927859e2.js\"],\"component---src-pages-about-js\":[\"/component---src-pages-about-js-b6454310e5dd1faeb3ba.js\"],\"component---src-pages-anna-daan-js\":[\"/component---src-pages-anna-daan-js-97c62534c7c21f1218f5.js\"],\"component---src-pages-annadaan-js\":[\"/component---src-pages-annadaan-js-cee131e25740517f1cde.js\"],\"component---src-pages-ayodhya-annadaan-js\":[\"/component---src-pages-ayodhya-annadaan-js-21df2da31a0ef20cbcf7.js\"],\"component---src-pages-ayodhya-festival-js\":[\"/component---src-pages-ayodhya-festival-js-bb9ffa23e5e84fcbcd34.js\"],\"component---src-pages-become-life-patron-js\":[\"/component---src-pages-become-life-patron-js-45197b375a480ff0c3fe.js\"],\"component---src-pages-blog-js\":[\"/component---src-pages-blog-js-ec808c749182916513aa.js\"],\"component---src-pages-cart-js\":[\"/component---src-pages-cart-js-280277f32d59da9e9967.js\"],\"component---src-pages-contact-js\":[\"/component---src-pages-contact-js-df6014252629946b601b.js\"],\"component---src-pages-donate-akshaya-tritiya-js\":[\"/component---src-pages-donate-akshaya-tritiya-js-8efa06798c5cd72cc907.js\"],\"component---src-pages-donate-dhanteras-js\":[\"/component---src-pages-donate-dhanteras-js-3ed2d11d80e13436c59f.js\"],\"component---src-pages-donate-gaur-purnima-js\":[\"/component---src-pages-donate-gaur-purnima-js-42b8d29bf408b4f2812e.js\"],\"component---src-pages-donate-gaur-purnima-seva-js\":[\"/component---src-pages-donate-gaur-purnima-seva-js-78cbe629b49f3beb441f.js\"],\"component---src-pages-donate-index-js\":[\"/component---src-pages-donate-index-js-acfdb6df9be59734c222.js\"],\"component---src-pages-donate-janmashtami-2024-js\":[\"/component---src-pages-donate-janmashtami-2024-js-91cdae6cf03304803f3f.js\"],\"component---src-pages-donate-janmashtami-js\":[\"/component---src-pages-donate-janmashtami-js-07a954c9c2664aacf51a.js\"],\"component---src-pages-donate-janmashtami-seva-js\":[\"/component---src-pages-donate-janmashtami-seva-js-9f09a0a699622ce21cfe.js\"],\"component---src-pages-donate-janmashtami-special-js\":[\"/component---src-pages-donate-janmashtami-special-js-51f8a272d4dca04c40f3.js\"],\"component---src-pages-donate-kartik-deepotsava-seva-js\":[\"/component---src-pages-donate-kartik-deepotsava-seva-js-63cc520490297ce24e4c.js\"],\"component---src-pages-donate-makar-sankranti-js\":[\"/component---src-pages-donate-makar-sankranti-js-638e6004b51cecf4d1cc.js\"],\"component---src-pages-donate-rama-navami-js\":[\"/component---src-pages-donate-rama-navami-js-3bc437bf456a3cbc14e9.js\"],\"component---src-pages-donate-sri-krishna-janmashtami-js\":[\"/component---src-pages-donate-sri-krishna-janmashtami-js-f6732ca711633a92e210.js\"],\"component---src-pages-donations-js\":[\"/component---src-pages-donations-js-30113bc026a8e4d447d9.js\"],\"component---src-pages-eazypay-index-js\":[\"/component---src-pages-eazypay-index-js-a2db653da403dc53f901.js\"],\"component---src-pages-eazypay-status-js\":[\"/component---src-pages-eazypay-status-js-6a589a48df33dfaf3228.js\"],\"component---src-pages-ekadasi-index-js\":[\"/component---src-pages-ekadasi-index-js-667f01a5572ab41cc499.js\"],\"component---src-pages-feedback-js\":[\"/component---src-pages-feedback-js-fe527c666ba011ce850b.js\"],\"component---src-pages-free-puja-js\":[\"/component---src-pages-free-puja-js-22e6ba35ee3a0fcf580d.js\"],\"component---src-pages-gita-daan-js\":[\"/component---src-pages-gita-daan-js-f9a723461f3e57842ea6.js\"],\"component---src-pages-gita-olympiad-index-js\":[\"/component---src-pages-gita-olympiad-index-js-f97d83b920ab151e35ee.js\"],\"component---src-pages-gita-olympiad-marathi-js\":[\"/component---src-pages-gita-olympiad-marathi-js-ffe44c32cbbd8585dca0.js\"],\"component---src-pages-index-js\":[\"/component---src-pages-index-js-680616bb7ff0bd0f76b1.js\"],\"component---src-pages-pan-js\":[\"/component---src-pages-pan-js-3843c00f6fb1c11c43c9.js\"],\"component---src-pages-pay-js\":[\"/component---src-pages-pay-js-b8a4ad19adee5dc215c2.js\"],\"component---src-pages-payment-index-js\":[\"/component---src-pages-payment-index-js-b97058f319e1ac32b744.js\"],\"component---src-pages-payment-status-js\":[\"/component---src-pages-payment-status-js-497805acee657ddf4ef0.js\"],\"component---src-pages-privacy-policy-js\":[\"/component---src-pages-privacy-policy-js-a827f03f74522cc2f523.js\"],\"component---src-pages-programs-bhagavad-gita-online-sessions-js\":[\"/component---src-pages-programs-bhagavad-gita-online-sessions-js-4450695b070e4e856db0.js\"],\"component---src-pages-programs-daily-bhagavad-gita-js\":[\"/component---src-pages-programs-daily-bhagavad-gita-js-bde849c88444aa57e783.js\"],\"component---src-pages-programs-folk-friends-of-lord-krishna-js\":[\"/component---src-pages-programs-folk-friends-of-lord-krishna-js-bc9d1321758bd2ca4699.js\"],\"component---src-pages-programs-free-bhagavad-gita-js\":[\"/component---src-pages-programs-free-bhagavad-gita-js-4d1c5ca40d6535637e3f.js\"],\"component---src-pages-programs-gita-life-js\":[\"/component---src-pages-programs-gita-life-js-4830e0b1f322b6ad725c.js\"],\"component---src-pages-programs-gita-sessions-js\":[\"/component---src-pages-programs-gita-sessions-js-a28e40a3c86b9ce8d5ff.js\"],\"component---src-pages-programs-icvk-indian-culture-and-values-for-kids-js\":[\"/component---src-pages-programs-icvk-indian-culture-and-values-for-kids-js-f6d751f3bb117b59248e.js\"],\"component---src-pages-programs-icvk-registration-js\":[\"/component---src-pages-programs-icvk-registration-js-b40e86be0f920fe11030.js\"],\"component---src-pages-programs-index-js\":[\"/component---src-pages-programs-index-js-fd212139f674683b00a0.js\"],\"component---src-pages-programs-learn-bhagavad-gita-js\":[\"/component---src-pages-programs-learn-bhagavad-gita-js-fa5e652c838d7f6e7678.js\"],\"component---src-pages-programs-vrjp-gita-sessions-js\":[\"/component---src-pages-programs-vrjp-gita-sessions-js-8be3d01b32cf108f1bcd.js\"],\"component---src-pages-quiz-bg-questions-js\":[\"/component---src-pages-quiz-bg-questions-js-01df12af234c0266b115.js\"],\"component---src-pages-quiz-bg-result-js\":[\"/component---src-pages-quiz-bg-result-js-4021b77bf054ded9da9c.js\"],\"component---src-pages-quiz-bhagavad-gita-js\":[\"/component---src-pages-quiz-bhagavad-gita-js-a5d2e108e25ec4628c22.js\"],\"component---src-pages-register-js\":[\"/component---src-pages-register-js-c84f7073eea1b22330dc.js\"],\"component---src-pages-seva-js\":[\"/component---src-pages-seva-js-53c500c3d3dd5c0272ad.js\"],\"component---src-pages-sp-ashraya-form-index-js\":[\"/component---src-pages-sp-ashraya-form-index-js-91b3b92683ea617243a9.js\"],\"component---src-pages-srila-prabhupada-ashraya-js\":[\"/component---src-pages-srila-prabhupada-ashraya-js-0da12c3ade826ac1fa5c.js\"],\"component---src-pages-srila-prabhupada-js\":[\"/component---src-pages-srila-prabhupada-js-147f62d4540c4b127e0e.js\"],\"component---src-pages-srimad-bhagavatam-js\":[\"/component---src-pages-srimad-bhagavatam-js-92bca82b82c134533e6f.js\"],\"component---src-pages-terms-and-conditions-js\":[\"/component---src-pages-terms-and-conditions-js-1ff83cb5c1ec70b77aff.js\"],\"component---src-pages-yatras-ayodhya-js\":[\"/component---src-pages-yatras-ayodhya-js-f3523efd5d4a546401cb.js\"],\"component---src-pages-yatras-index-js\":[\"/component---src-pages-yatras-index-js-5cf89454708b31d3f4bf.js\"],\"component---src-templates-blog-detail-js\":[\"/component---src-templates-blog-detail-js-8824876335e5b4825965.js\"],\"component---src-templates-seva-js\":[\"/component---src-templates-seva-js-05790c886555bb182786.js\"]}";
 </script>
 <script>
-window.___webpackCompilationHash = "4b8b32f072120d493b3a";
+    window.___webpackCompilationHash = "4b8b32f072120d493b3a";
 </script>
 <script src="/webpack-runtime-fc1b25274ecc36ea752b.js" async></script>
 <script src="/framework-d80267ba493f95710a30.js" async></script>
 <script src="/app-cc4a7ab7d73ee9791e8b.js" async></script>
 
 <script>
-let multiMode = false;
-let selected = [];
+    let multiMode = false;
+    let selected = [];
 
-const toggle = document.getElementById('multiToggle');
-const proceedBtn = document.getElementById('proceedMultiCheckout');
-const checkoutContainer = document.getElementById('multiCheckoutContainer');
-const totalDisplay = document.getElementById('multiTotal');
+    const toggle = document.getElementById('multiToggle');
+    const proceedBtn = document.getElementById('proceedMultiCheckout');
+    const checkoutContainer = document.getElementById('multiCheckoutContainer');
+    const totalDisplay = document.getElementById('multiTotal');
 
-toggle.addEventListener('change', function() {
-    multiMode = this.checked;
-    selected = [];
-    updateTotal();
-    checkoutContainer.classList.toggle('d-none', !multiMode);
-    document.querySelectorAll('.donate-btn').forEach(btn => btn.classList.remove('selected'));
-});
-
-document.querySelectorAll('.donate-btn').forEach(btn => {
-    btn.addEventListener('click', function() {
-        const id = this.dataset.id;
-        const price = parseInt(this.dataset.price);
-
-        if (!multiMode) {
-            window.location.href = `/checkout/${id}`;
-        } else {
-            if (this.classList.contains('selected')) {
-                selected = selected.filter(item => item.id !== id);
-                this.classList.remove('selected');
-            } else {
-                selected.push({
-                    id,
-                    price
-                });
-                this.classList.add('selected');
-            }
-            updateTotal();
-        }
+    toggle.addEventListener('change', function() {
+        multiMode = this.checked;
+        selected = [];
+        updateTotal();
+        checkoutContainer.classList.toggle('d-none', !multiMode);
+        document.querySelectorAll('.donate-btn').forEach(btn => btn.classList.remove('selected'));
     });
-});
 
-function updateTotal() {
-    const total = selected.reduce((sum, item) => sum + item.price, 0);
-    totalDisplay.innerText = `₹${total.toLocaleString()}`;
-}
+    document.querySelectorAll('.donate-btn').forEach(btn => {
+        btn.addEventListener('click', function() {
+            const id = this.dataset.id;
+            const price = parseInt(this.dataset.price);
 
-proceedBtn.addEventListener('click', function() {
-    const total = selected.reduce((sum, item) => sum + item.price, 0);
-    const sevaIds = selected.map(item => item.id).join(',');
-    window.location.href = `/checkout/18?amount=${total}&sevas=${sevaIds}`;
-});
+            if (!multiMode) {
+                window.location.href = `/checkout/${id}`;
+            } else {
+                if (this.classList.contains('selected')) {
+                    selected = selected.filter(item => item.id !== id);
+                    this.classList.remove('selected');
+                } else {
+                    selected.push({
+                        id,
+                        price
+                    });
+                    this.classList.add('selected');
+                }
+                updateTotal();
+            }
+        });
+    });
+
+    function updateTotal() {
+        const total = selected.reduce((sum, item) => sum + item.price, 0);
+        totalDisplay.innerText = `₹${total.toLocaleString()}`;
+    }
+
+    proceedBtn.addEventListener('click', function() {
+        const total = selected.reduce((sum, item) => sum + item.price, 0);
+        const sevaIds = selected.map(item => item.id).join(',');
+        window.location.href = `/checkout/18?amount=${total}&sevas=${sevaIds}`;
+    });
 </script>
 <script>
-const scrollContainer = document.querySelector('.react-horizontal-scrolling-menu--scroll-container');
-const btnLeft = document.querySelector('.b-left');
-const btnRight = document.querySelector('.b-right');
+    const scrollContainer = document.querySelector('.react-horizontal-scrolling-menu--scroll-container');
+    const btnLeft = document.querySelector('.b-left');
+    const btnRight = document.querySelector('.b-right');
 
-btnLeft.addEventListener('click', () => {
-    scrollContainer.scrollBy({
-        left: -320, // scroll amount equal to one card width
-        behavior: 'smooth'
+    btnLeft.addEventListener('click', () => {
+        scrollContainer.scrollBy({
+            left: -320, // scroll amount equal to one card width
+            behavior: 'smooth'
+        });
     });
-});
 
-btnRight.addEventListener('click', () => {
-    scrollContainer.scrollBy({
-        left: 320,
-        behavior: 'smooth'
+    btnRight.addEventListener('click', () => {
+        scrollContainer.scrollBy({
+            left: 320,
+            behavior: 'smooth'
+        });
     });
-});
 
-// Optional: Enable/disable buttons at edges
-scrollContainer.addEventListener('scroll', () => {
-    if (scrollContainer.scrollLeft <= 0) {
-        btnLeft.disabled = true;
-    } else {
-        btnLeft.disabled = false;
-    }
-    if (scrollContainer.scrollLeft + scrollContainer.clientWidth >= scrollContainer.scrollWidth) {
-        btnRight.disabled = true;
-    } else {
-        btnRight.disabled = false;
-    }
-});
+    // Optional: Enable/disable buttons at edges
+    scrollContainer.addEventListener('scroll', () => {
+        if (scrollContainer.scrollLeft <= 0) {
+            btnLeft.disabled = true;
+        } else {
+            btnLeft.disabled = false;
+        }
+        if (scrollContainer.scrollLeft + scrollContainer.clientWidth >= scrollContainer.scrollWidth) {
+            btnRight.disabled = true;
+        } else {
+            btnRight.disabled = false;
+        }
+    });
 
-// Initialize button state on load
-scrollContainer.dispatchEvent(new Event('scroll'));
+    // Initialize button state on load
+    scrollContainer.dispatchEvent(new Event('scroll'));
 </script>
 
 <style>
-/* .donate-btn.selected {
+    /* .donate-btn.selected {
     background-color: #28a745 !important;
     color: #fff !important;
     font-weight: bold;
 } */
 
-/* Force all cards same height */
-.react-horizontal-scrolling-menu--item .card {
-    height: 500px;
-    /* set your desired total card height */
-    display: flex;
-    flex-direction: column;
-}
-
-/* Make sure image container takes fixed height */
-.card .gatsby-image-wrapper {
-    height: 220px;
-    /* keep your current image height */
-    flex-shrink: 0;
-}
-
-/* Make body take remaining height */
-.card .card-body {
-    flex: 1;
-    /* fill remaining space */
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-
-}
-
-.text-center my-3 {
-    background-color: #ebde5b !important;
-}
-
-.footer p {
-    /* margin-right: 0px !important; */
-    display: flex;
-}
-
-.button {
-    padding: 10px 20px;
-    border: none;
-    cursor: pointer;
-    transition: background-color 0.3s ease, color 0.8s ease;
-}
-
-.button:hover {
-    background-color: #28a745 !important;
-    color: #fff !important;
-}
-
-/* 👇 Entry Animation */
-@keyframes slideUpFade {
-    0% {
-        opacity: 0;
-        transform: translateY(40px);
+    /* Force all cards same height */
+    .react-horizontal-scrolling-menu--item .card {
+        height: 500px;
+        /* set your desired total card height */
+        display: flex;
+        flex-direction: column;
     }
 
-    100% {
+    /* Make sure image container takes fixed height */
+    .card .gatsby-image-wrapper {
+        height: 220px;
+        /* keep your current image height */
+        flex-shrink: 0;
+    }
+
+    /* Make body take remaining height */
+    .card .card-body {
+        flex: 1;
+        /* fill remaining space */
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+
+    }
+
+    .text-center my-3 {
+        background-color: #ebde5b !important;
+    }
+
+    .footer p {
+        /* margin-right: 0px !important; */
+        display: flex;
+    }
+
+    .button {
+        padding: 10px 20px;
+        border: none;
+        cursor: pointer;
+        transition: background-color 0.3s ease, color 0.8s ease;
+    }
+
+    .button:hover {
+        background-color: #28a745 !important;
+        color: #fff !important;
+    }
+
+    /* 👇 Entry Animation */
+    @keyframes slideUpFade {
+        0% {
+            opacity: 0;
+            transform: translateY(40px);
+        }
+
+        100% {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    }
+
+    .animate-checkout {
+        animation: slideUpFade 0.6s ease-out;
+    }
+
+    /* 👇 Hover Animation */
+    .checkout-btn {
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .checkout-btn:hover {
+        transform: translateY(-4px) scale(1.05);
+        /* small lift + zoom */
+        box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+    }
+
+    .custom-donation-card {
+        cursor: pointer;
+        transition: box-shadow 0.3s ease;
+        display: flex;
+        flex-direction: column;
+        border-radius: 0.5rem;
+        background: white;
+        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    }
+
+    .custom-donation-card:hover,
+    .custom-donation-card:focus-within {
+        box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+        z-index: 10;
+    }
+
+    .donation-image {
+        position: relative;
+        width: 100%;
+        height: 250px;
+        overflow: hidden;
+        border-top-left-radius: 0.5rem;
+        border-top-right-radius: 0.5rem;
+        flex-shrink: 0;
+    }
+
+    .donation-image img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        /* Fill container nicely */
+        border-top-left-radius: 0.5rem;
+        border-top-right-radius: 0.5rem;
+        transition: transform 0.3s ease;
+    }
+
+    .donation-image:hover img,
+    .donation-image:focus-within img {
+        transform: scale(1.05);
+    }
+
+    .hover-overlay {
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background-color: rgba(173, 216, 230, 0.85);
+        border-top-left-radius: 0.5rem;
+        border-top-right-radius: 0.5rem;
+        opacity: 0;
+        transform: translateY(10%);
+        transition: opacity 0.4s ease, transform 0.4s ease;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        color: #003366;
+        padding: 1.5rem;
+        pointer-events: none;
+    }
+
+    .donation-image:hover .hover-overlay,
+    .donation-image:focus-within .hover-overlay {
         opacity: 1;
         transform: translateY(0);
+        pointer-events: auto;
     }
-}
 
-.animate-checkout {
-    animation: slideUpFade 0.6s ease-out;
-}
+    .donation-name {
+        font-size: 1.5rem;
+        font-weight: 700;
+        margin-bottom: 0.25rem;
+    }
 
-/* 👇 Hover Animation */
-.checkout-btn {
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
+    .donation-amount {
+        font-size: 1.25rem;
+        font-weight: 600;
+        margin-bottom: 1rem;
+    }
 
-.checkout-btn:hover {
-    transform: translateY(-4px) scale(1.05);
-    /* small lift + zoom */
-    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
-}
+    .card-body-custom {
+        flex-grow: 0;
+        padding: 0.5rem 1.5rem;
+        height: 50px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-weight: 700;
+        font-size: 1.1rem;
+        color: #333;
+    }
 
-.custom-donation-card {
-    cursor: pointer;
-    transition: box-shadow 0.3s ease;
-    display: flex;
-    flex-direction: column;
-    border-radius: 0.5rem;
-    background: white;
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
-}
+    .btn-alt-hkm {
+        background-color: #007bff;
+        color: white;
+        border: none;
+        padding: 0.5rem 1.25rem;
+        border-radius: 0.375rem;
+        font-weight: 600;
+        min-width: 120px;
+        transition: background-color 0.3s ease;
+    }
 
-.custom-donation-card:hover,
-.custom-donation-card:focus-within {
-    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
-    z-index: 10;
-}
+    .btn-alt-hkm:hover {
+        background-color: #0056b3;
+        /* color: white; */
+    }
 
-.donation-image {
-    position: relative;
-    width: 100%;
-    height: 250px;
-    overflow: hidden;
-    border-top-left-radius: 0.5rem;
-    border-top-right-radius: 0.5rem;
-    flex-shrink: 0;
-}
+    #donation-scroll {
+        scrollbar-width: none;
+    }
 
-.donation-image img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    /* Fill container nicely */
-    border-top-left-radius: 0.5rem;
-    border-top-right-radius: 0.5rem;
-    transition: transform 0.3s ease;
-}
+    #donation-scroll::-webkit-scrollbar {
+        display: none;
+    }
 
-.donation-image:hover img,
-.donation-image:focus-within img {
-    transform: scale(1.05);
-}
+    .card-wrapper {
+        perspective: 1200px;
+        -webkit-perspective: 1200px;
+    }
 
-.hover-overlay {
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background-color: rgba(173, 216, 230, 0.85);
-    border-top-left-radius: 0.5rem;
-    border-top-right-radius: 0.5rem;
-    opacity: 0;
-    transform: translateY(10%);
-    transition: opacity 0.4s ease, transform 0.4s ease;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    color: #003366;
-    padding: 1.5rem;
-    pointer-events: none;
-}
+    .donation-card {
+        transform-style: preserve-3d;
+        -webkit-transform-style: preserve-3d;
+        backface-visibility: hidden;
+        -webkit-backface-visibility: hidden;
+        transition: transform 320ms cubic-bezier(.2, .9, .2, 1), box-shadow 320ms ease;
+        will-change: transform;
+        cursor: grab;
+    }
 
-.donation-image:hover .hover-overlay,
-.donation-image:focus-within .hover-overlay {
-    opacity: 1;
-    transform: translateY(0);
-    pointer-events: auto;
-}
+    .donation-card:active {
+        cursor: grabbing;
+    }
 
-.donation-name {
-    font-size: 1.5rem;
-    font-weight: 700;
-    margin-bottom: 0.25rem;
-}
+    .card-wrapper:hover .donation-card,
+    .donation-card:hover {
+        transform: rotateY(6deg) translateY(-8px) scale(1.03);
+        box-shadow: 0 18px 30px rgba(2, 6, 23, 0.16);
+    }
 
-.donation-amount {
-    font-size: 1.25rem;
-    font-weight: 600;
-    margin-bottom: 1rem;
-}
+    #donation-scroll.dragging {
+        cursor: grabbing;
+    }
 
-.card-body-custom {
-    flex-grow: 0;
-    padding: 0.5rem 1.5rem;
-    height: 50px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-weight: 700;
-    font-size: 1.1rem;
-    color: #333;
-}
-
-.btn-alt-hkm {
-    background-color: #007bff;
-    color: white;
-    border: none;
-    padding: 0.5rem 1.25rem;
-    border-radius: 0.375rem;
-    font-weight: 600;
-    min-width: 120px;
-    transition: background-color 0.3s ease;
-}
-
-.btn-alt-hkm:hover {
-    background-color: #0056b3;
-    /* color: white; */
-}
-
-#donation-scroll {
-    scrollbar-width: none;
-}
-
-#donation-scroll::-webkit-scrollbar {
-    display: none;
-}
-
-.card-wrapper {
-    perspective: 1200px;
-    -webkit-perspective: 1200px;
-}
-
-.donation-card {
-    transform-style: preserve-3d;
-    -webkit-transform-style: preserve-3d;
-    backface-visibility: hidden;
-    -webkit-backface-visibility: hidden;
-    transition: transform 320ms cubic-bezier(.2, .9, .2, 1), box-shadow 320ms ease;
-    will-change: transform;
-    cursor: grab;
-}
-
-.donation-card:active {
-    cursor: grabbing;
-}
-
-.card-wrapper:hover .donation-card,
-.donation-card:hover {
-    transform: rotateY(6deg) translateY(-8px) scale(1.03);
-    box-shadow: 0 18px 30px rgba(2, 6, 23, 0.16);
-}
-
-#donation-scroll.dragging {
-    cursor: grabbing;
-}
-
-.gradient-mask {
-    -webkit-mask-image: linear-gradient(to right, transparent, black 6%, black 94%, transparent);
-    mask-image: linear-gradient(to right, transparent, black 6%, black 94%, transparent);
-}
+    .gradient-mask {
+        -webkit-mask-image: linear-gradient(to right, transparent, black 6%, black 94%, transparent);
+        mask-image: linear-gradient(to right, transparent, black 6%, black 94%, transparent);
+    }
 </style>
 
 @endsection

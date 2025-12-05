@@ -110,12 +110,23 @@ $sevas = request()->query('sevas', '');
       padding-right: 40px;
       padding-top: 40px;
     }
+
+    @media (max-width: 576px) {
+      /* .mobile-flex-wrap {
+        display: flex;
+        flex-wrap: wrap !important;
+      } */
+
+      .row {
+        flex-direction: column-reverse;
+      }
+    }
   </style>
 </head>
 
 <body>
   <div class="container-fluid custom-padding">
-    <div class="row g-4">
+    <div class="row g-4 mobile-flex-wrap">
       <div class="col-md-12 col-lg-7">
         <div class="row g-3">
           <div class="col-sm-6">

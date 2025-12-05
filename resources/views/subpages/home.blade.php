@@ -30,6 +30,7 @@ Hare Krishna Movement Dehradun
             <span class="carousel-control-next-icon" aria-hidden="true"></span>
             <span class="visually-hidden">Next</span>
         </button>
+
     </div>
 
     <section class="offer-seva-section py-5">
@@ -71,6 +72,27 @@ Hare Krishna Movement Dehradun
         </div>
     </section>
     <style>
+        .carousel-control-prev-icon,
+        .carousel-control-next-icon {
+            background-size: 100%, 100%;
+            background-image: none !important;
+        }
+
+        .carousel-control-prev-icon {
+            background-image: url("data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23ffffff' viewBox='0 0 16 16'%3E%3Cpath d='M11.354 1.646a.5.5 0 0 1 0 .708L5.707 8l5.647 5.646a.5.5 0 0 1-.708.708l-6-6a.5.5 0 0 1 0-.708l6-6a.5.5 0 0 1 .708 0z'/%3E%3C/svg%3E") !important;
+            background-size: 100% 100%;
+            width: 40px;
+            height: 40px;
+        }
+
+        .carousel-control-next-icon {
+            background-image: url("data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23ffffff' viewBox='0 0 16 16'%3E%3Cpath d='M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z'/%3E%3C/svg%3E") !important;
+            background-size: 100% 100%;
+            width: 40px;
+            height: 40px;
+        }
+
+
         .carousel-inner img {
             border-bottom-left-radius: 10px;
             border-bottom-right-radius: 10px;
@@ -541,7 +563,7 @@ Hare Krishna Movement Dehradun
             width: 35%;
             max-width: 100%;
             border-radius: 12px;
-            left: 150px;
+            left: 170px;
             position: relative;
         }
 

@@ -37,6 +37,7 @@
 <style>
     body {
         overflow-x: hidden;
+        color: #000000;
     }
 
     .firefly {
@@ -550,13 +551,321 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
 
     <style>
-        /* NAVBAR */
+        /* ------------------ Your original desktop / dropdown styles (kept) ------------------ */
+        /* (I included your existing CSS mostly unchanged, then appended mobile drawer rules) */
+
+        .nav {
+            --bs-nav-link-padding-x: 1rem;
+            --bs-nav-link-padding-y: 0.5rem;
+            --bs-nav-link-font-weight: ;
+            --bs-nav-link-color: var(--bs-link-color);
+            --bs-nav-link-hover-color: var(--bs-link-hover-color);
+            --bs-nav-link-disabled-color: var(--bs-secondary-color);
+            display: flex;
+            flex-wrap: wrap;
+            list-style: none;
+            margin-bottom: 0;
+            padding-left: 0
+        }
+
+        .nav-link {
+            background: none;
+            border: 0;
+            color: var(--bs-nav-link-color);
+            display: block;
+            font-size: var(--bs-nav-link-font-size);
+            font-weight: var(--bs-nav-link-font-weight);
+            padding: var(--bs-nav-link-padding-y) var(--bs-nav-link-padding-x);
+            text-decoration: none;
+            transition: color .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out
+        }
+
+        @media(prefers-reduced-motion:reduce) {
+            .nav-link {
+                transition: none
+            }
+        }
+
+        .nav-link:focus,
+        .nav-link:hover {
+            color: var(--bs-nav-link-hover-color)
+        }
+
+        .nav-link:focus-visible {
+            box-shadow: 0 0 0 .25rem rgba(13, 110, 253, .25);
+            outline: 0
+        }
+
+        .nav-link.disabled {
+            color: var(--bs-nav-link-disabled-color);
+            cursor: default;
+            pointer-events: none
+        }
+
+        .nav-tabs {
+            --bs-nav-tabs-border-width: var(--bs-border-width);
+            --bs-nav-tabs-border-color: var(--bs-border-color);
+            --bs-nav-tabs-border-radius: var(--bs-border-radius);
+            --bs-nav-tabs-link-hover-border-color: var(--bs-secondary-bg) var(--bs-secondary-bg) var(--bs-border-color);
+            --bs-nav-tabs-link-active-color: var(--bs-emphasis-color);
+            --bs-nav-tabs-link-active-bg: var(--bs-body-bg);
+            --bs-nav-tabs-link-active-border-color: var(--bs-border-color) var(--bs-border-color) var(--bs-body-bg);
+            border-bottom: var(--bs-nav-tabs-border-width) solid var(--bs-nav-tabs-border-color)
+        }
+
+        .nav-tabs .nav-link {
+            border: var(--bs-nav-tabs-border-width) solid transparent;
+            border-top-left-radius: var(--bs-nav-tabs-border-radius);
+            border-top-right-radius: var(--bs-nav-tabs-border-radius);
+            margin-bottom: calc(var(--bs-nav-tabs-border-width)*-1)
+        }
+
+        .nav-tabs .nav-link:focus,
+        .nav-tabs .nav-link:hover {
+            border-color: var(--bs-nav-tabs-link-hover-border-color);
+            isolation: isolate
+        }
+
+        .nav-tabs .nav-link.disabled,
+        .nav-tabs .nav-link:disabled {
+            background-color: transparent;
+            border-color: transparent;
+            color: var(--bs-nav-link-disabled-color)
+        }
+
+        .nav-tabs .nav-item.show .nav-link,
+        .nav-tabs .nav-link.active {
+            background-color: var(--bs-nav-tabs-link-active-bg);
+            border-color: var(--bs-nav-tabs-link-active-border-color);
+            color: var(--bs-nav-tabs-link-active-color)
+        }
+
+        .nav-tabs .dropdown-menu {
+            border-top-left-radius: 0;
+            border-top-right-radius: 0;
+            margin-top: calc(var(--bs-nav-tabs-border-width)*-1)
+        }
+
+        .nav-pills {
+            --bs-nav-pills-border-radius: var(--bs-border-radius);
+            --bs-nav-pills-link-active-color: #fff;
+            --bs-nav-pills-link-active-bg: #0d6efd
+        }
+
+        .nav-pills .nav-link {
+            border-radius: var(--bs-nav-pills-border-radius)
+        }
+
+        .nav-pills .nav-link:disabled {
+            background-color: transparent;
+            border-color: transparent;
+            color: var(--bs-nav-link-disabled-color)
+        }
+
+        .nav-pills .nav-link.active,
+        .nav-pills .show>.nav-link {
+            background-color: var(--bs-nav-pills-link-active-bg);
+            color: var(--bs-nav-pills-link-active-color)
+        }
+
+        .nav-underline {
+            --bs-nav-underline-gap: 1rem;
+            --bs-nav-underline-border-width: 0.125rem;
+            --bs-nav-underline-link-active-color: var(--bs-emphasis-color);
+            gap: var(--bs-nav-underline-gap)
+        }
+
+        .nav-underline .nav-link {
+            border-bottom: var(--bs-nav-underline-border-width) solid transparent;
+            padding-left: 0;
+            padding-right: 0
+        }
+
+        .nav-underline .nav-link:focus,
+        .nav-underline .nav-link:hover {
+            border-bottom-color: currentcolor
+        }
+
+        .nav-underline .nav-link.active,
+        .nav-underline .show>.nav-link {
+            border-bottom-color: currentcolor;
+            color: var(--bs-nav-underline-link-active-color);
+            font-weight: 700
+        }
+
+        .nav-fill .nav-item,
+        .nav-fill>.nav-link {
+            flex: 1 1 auto;
+            text-align: center
+        }
+
+        .nav-justified .nav-item,
+        .nav-justified>.nav-link {
+            flex-basis: 0;
+            flex-grow: 1;
+            text-align: center
+        }
+
+        .nav-fill .nav-item .nav-link,
+        .nav-justified .nav-item .nav-link {
+            width: 100%
+        }
+
+        .tab-content>.tab-pane {
+            display: none
+        }
+
+        .tab-content>.active {
+            display: block
+        }
+
+        .navbar {
+            --bs-navbar-padding-x: 0;
+            --bs-navbar-padding-y: 0.5rem;
+            --bs-navbar-color: rgba(var(--bs-emphasis-color-rgb), 0.65);
+            --bs-navbar-hover-color: rgba(var(--bs-emphasis-color-rgb), 0.8);
+            --bs-navbar-disabled-color: rgba(var(--bs-emphasis-color-rgb), 0.3);
+            --bs-navbar-active-color: rgba(var(--bs-emphasis-color-rgb), 1);
+            --bs-navbar-brand-padding-y: 0.3125rem;
+            --bs-navbar-brand-margin-end: 1rem;
+            --bs-navbar-brand-font-size: 1.25rem;
+            --bs-navbar-brand-color: rgba(var(--bs-emphasis-color-rgb), 1);
+            --bs-navbar-brand-hover-color: rgba(var(--bs-emphasis-color-rgb), 1);
+            --bs-navbar-nav-link-padding-x: 0.5rem;
+            --bs-navbar-toggler-padding-y: 0.25rem;
+            --bs-navbar-toggler-padding-x: 0.75rem;
+            --bs-navbar-toggler-font-size: 1.25rem;
+            --bs-navbar-toggler-icon-bg: url("data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3E%3Cpath stroke='rgba(33, 37, 41, 0.75)' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+            --bs-navbar-toggler-border-color: rgba(var(--bs-emphasis-color-rgb), 0.15);
+            --bs-navbar-toggler-border-radius: var(--bs-border-radius);
+            --bs-navbar-toggler-focus-width: 0.25rem;
+            --bs-navbar-toggler-transition: box-shadow 0.15s ease-in-out;
+            align-items: center;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            padding: var(--bs-navbar-padding-y) var(--bs-navbar-padding-x)
+        }
+
+        .navbar>.container,
+        .navbar>.container-fluid,
+        .navbar>.container-lg,
+        .navbar>.container-md,
+        .navbar>.container-sm,
+        .navbar>.container-xl,
+        .navbar>.container-xxl {
+            align-items: center;
+            display: flex;
+            flex-wrap: inherit;
+            justify-content: space-between
+        }
+
+        .navbar-brand {
+            color: var(--bs-navbar-brand-color);
+            font-size: var(--bs-navbar-brand-font-size);
+            margin-right: var(--bs-navbar-brand-margin-end);
+            padding-bottom: var(--bs-navbar-brand-padding-y);
+            padding-top: var(--bs-navbar-brand-padding-y);
+            text-decoration: none;
+            white-space: nowrap
+        }
+
+        .navbar-brand:focus,
+        .navbar-brand:hover {
+            color: var(--bs-navbar-brand-hover-color)
+        }
+
+        .navbar-nav {
+            --bs-nav-link-padding-x: 0;
+            --bs-nav-link-padding-y: 0.5rem;
+            --bs-nav-link-font-weight: ;
+            --bs-nav-link-color: var(--bs-navbar-color);
+            --bs-nav-link-hover-color: var(--bs-navbar-hover-color);
+            --bs-nav-link-disabled-color: var(--bs-navbar-disabled-color);
+            display: flex;
+            flex-direction: column;
+            list-style: none;
+            margin-bottom: 0;
+            padding-left: 0
+        }
+
+        .navbar-nav .nav-link.active,
+        .navbar-nav .nav-link.show {
+            color: var(--bs-navbar-active-color)
+        }
+
+        .navbar-nav .dropdown-menu {
+            position: static
+        }
+
+        .navbar-text {
+            color: var(--bs-navbar-color);
+            padding-bottom: .5rem;
+            padding-top: .5rem
+        }
+
+        .navbar-text a,
+        .navbar-text a:focus,
+        .navbar-text a:hover {
+            color: var(--bs-navbar-active-color)
+        }
+
+        .navbar-collapse {
+            align-items: center;
+            flex-basis: 100%;
+            flex-grow: 1
+        }
+
+        .navbar-toggler {
+            background-color: transparent;
+            border: var(--bs-border-width) solid var(--bs-navbar-toggler-border-color);
+            border-radius: var(--bs-navbar-toggler-border-radius);
+            color: var(--bs-navbar-color);
+            font-size: var(--bs-navbar-toggler-font-size);
+            line-height: 1;
+            padding: var(--bs-navbar-toggler-padding-y) var(--bs-navbar-toggler-padding-x);
+            transition: var(--bs-navbar-toggler-transition)
+        }
+
+        @media(prefers-reduced-motion:reduce) {
+            .navbar-toggler {
+                transition: none
+            }
+        }
+
+        .navbar-toggler:hover {
+            text-decoration: none
+        }
+
+        .navbar-toggler:focus {
+            box-shadow: 0 0 0 var(--bs-navbar-toggler-focus-width);
+            outline: 0;
+            text-decoration: none
+        }
+
+        .navbar-toggler-icon {
+            background-image: var(--bs-navbar-toggler-icon-bg);
+            background-position: 50%;
+            background-repeat: no-repeat;
+            background-size: 100%;
+            display: inline-block;
+            height: 1.5em;
+            vertical-align: middle;
+            width: 1.5em
+        }
+
+        .navbar-nav-scroll {
+            max-height: var(--bs-scroll-height, 75vh);
+            overflow-y: auto
+        }
+
+        /* ---------- NAVBAR & TOGGLER ---------- */
         .navbar {
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.08);
             padding: 6px 20px !important;
             background: rgba(255, 255, 255, 0.55);
-
             backdrop-filter: blur(10px);
+            z-index: 1200;
         }
 
         /* TOP NAV LINKS */
@@ -578,7 +887,6 @@
             background: #eef2ff !important;
             color: #4a63e7 !important;
             transform: translateY(-5px);
-            /* font-weight: 700; */
         }
 
         /* DROPDOWN MENU BASE */
@@ -634,7 +942,6 @@
         /* MOBILE: show submenu when .show added; display inline in flow (accordion style) */
         @media (max-width: 991px) {
             .dropdown-menu {
-                /* make dropdown menus full-width or auto as desired */
                 min-width: 100%;
             }
 
@@ -654,18 +961,20 @@
                 transform: none;
             }
 
-            /* indent submenu items for clarity */
             .dropdown-submenu>.dropdown-menu .dropdown-item {
                 padding-left: 28px;
             }
 
-            /* make toggles clickable and show pointer */
             .dropdown-toggle {
                 cursor: pointer;
             }
+
+            .btn-blue {
+                margin-bottom: 10px;
+                display: inline-block;
+            }
         }
 
-        /* DROPDOWN ITEMS (BIGGER FONT) */
         .dropdown-item {
             font-size: 16px;
             font-weight: 500;
@@ -678,7 +987,6 @@
             color: #4a63e7 !important;
         }
 
-        /* SUBMENU TITLE */
         .dropdown-submenu>.dropdown-item.dropdown-toggle {
             font-size: 16px !important;
             font-weight: 600;
@@ -686,7 +994,7 @@
             justify-content: space-between;
         }
 
-        /* ARROWS */
+        /* ARROWS (uses Font Awesome 5 Free) */
         .navbar .dropdown-toggle::after {
             content: "\f107";
             font-family: "Font Awesome 5 Free";
@@ -704,13 +1012,11 @@
         /* SUBMENU ARROWS */
         .dropdown-submenu>.dropdown-item.dropdown-toggle::after {
             content: "\f105";
-            /* right arrow */
             font-family: "Font Awesome 5 Free";
             font-weight: 900;
             margin-left: 10px;
             transition: transform 0.35s ease, color 0.25s ease;
         }
-
 
         /* DONATE BUTTON WITH HEART */
         .btn-blue {
@@ -790,27 +1096,170 @@
             color: #4a63e7 !important;
         }
 
-        /* Add spacing for Donate button on mobile only */
+        /* ------------------ MOBILE DRAWER + HAMBURGER ANIMATION ------------------ */
         @media (max-width: 991px) {
-            .btn-blue {
-                margin-top: 12px !important;
-                margin-bottom: 10px !important;
-                display: inline-block;
+
+            /* Drawer panel */
+            .navbar-collapse {
+                position: fixed;
+                top: 0;
+                left: 0;
+                height: 100vh;
+                width: 80%;
+                background: #ffffff;
+                padding: 20px;
+                overflow-y: auto;
+                transform: translateX(-100%);
+                transition: transform 0.35s cubic-bezier(.2, .9, .2, 1);
+                z-index: 10000;
+                box-shadow: 4px 0 20px rgba(0, 0, 0, 0.12);
+                -webkit-overflow-scrolling: touch;
             }
+
+            .navbar-collapse.show {
+                transform: translateX(0);
+            }
+
+            /* Top logo inside the drawer */
+            .mobile-logo {
+                width: 140px;
+                margin-bottom: 18px;
+                display: block;
+            }
+
+            /* Backdrop area = right 20% */
+            .mobile-backdrop {
+                position: fixed;
+                top: 0;
+                left: 80%;
+                width: 20%;
+                height: 100vh;
+                background: rgba(0, 0, 0, 0.28);
+                opacity: 0;
+                pointer-events: none;
+                transition: opacity 0.25s ease;
+                z-index: 9995;
+            }
+
+            .mobile-backdrop.active {
+                opacity: 1;
+                pointer-events: auto;
+            }
+
+            /* Hamburger bar (3 lines) */
+            .navbar-toggler {
+                border: none !important;
+                background: transparent !important;
+                z-index: 11000;
+                position: relative;
+                padding: 6px;
+            }
+
+            .hamburger {
+                width: 26px;
+                height: 2px;
+                background: #111;
+                display: inline-block;
+                border-radius: 2px;
+                position: relative;
+                transition: all 0.35s ease;
+            }
+
+            .hamburger::before,
+            .hamburger::after {
+                content: "";
+                position: absolute;
+                left: 0;
+                width: 26px;
+                height: 2px;
+                background: #111;
+                border-radius: 2px;
+                transition: all 0.35s ease;
+            }
+
+            .hamburger::before {
+                top: -8px;
+            }
+
+            .hamburger::after {
+                top: 8px;
+            }
+
+            /* toggled -> X */
+            .navbar-toggler.open .hamburger {
+                background: transparent;
+            }
+
+            .navbar-toggler.open .hamburger::before {
+                transform: translateY(8px) rotate(45deg);
+            }
+
+            .navbar-toggler.open .hamburger::after {
+                transform: translateY(-8px) rotate(-45deg);
+            }
+
+            /* Ensure dropdown menus behave accordion-style on mobile */
+            .dropdown-menu {
+                display: none !important;
+                opacity: 1 !important;
+                visibility: visible !important;
+                transform: none !important;
+                position: relative !important;
+                box-shadow: none !important;
+                border: none !important;
+                padding-left: 0;
+            }
+
+            .dropdown-menu.show {
+                display: block !important;
+            }
+
+            /* Make nav links block-level in drawer */
+            .navbar-nav {
+                padding-top: 8px;
+            }
+
+            .navbar-nav .nav-link {
+                width: 100%;
+                padding: 12px 8px !important;
+                margin-bottom: 6px;
+                border-radius: 6px;
+            }
+
+            /* submenu items indentation */
+            .dropdown-submenu>.dropdown-menu .dropdown-item {
+                padding-left: 26px;
+            }
+
+            /* donate button inside drawer */
+            .btn-blue {
+                display: inline-block;
+                margin-top: 10px;
+            }
+        }
+
+        /* prevent body scroll when drawer is open */
+        body.nav-drawer-open {
+            overflow: hidden;
+            touch-action: none;
         }
     </style>
 
+    <!-- ---------- NAVBAR: full markup with your routes/content preserved ---------- -->
     <nav class="navbar navbar-expand-lg navbar-light sticky-top">
         <a href="{{ route('home') }}" class="navbar-brand d-flex align-items-center">
             <img src="https://hkmdehradun.org/assets/10/HKM-Dehradun-Logo-1024x617.jpg" style="height: 60px;">
         </a>
 
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse"
-            aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
+        <!-- toggler: unchanged aria attributes but custom markup and no data-bs toggling -->
+        <button class="navbar-toggler" type="button" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="hamburger" aria-hidden="true"></span>
         </button>
 
         <div class="collapse navbar-collapse" id="navbarCollapse">
+            <!-- Mobile top logo (inside drawer) -->
+            <img src="https://hkmdehradun.org/assets/10/HKM-Dehradun-Logo-1024x617.jpg" class="mobile-logo d-lg-none" alt="logo">
+
             <ul class="navbar-nav ms-auto">
 
                 <li class="nav-item">
@@ -820,12 +1269,12 @@
 
                 <li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle
-                {{ request()->is(
-                    'our-mission','objective','governance',
-                    'srila-prabhupada-life-story','krishna-life-story',
-                    'chaitanya-mahaprabhu','bhagavad-gita','krishna-consciousness',
-                    'blogs','gallery-images'
-                ) ? 'active' : '' }}" href="javascript:void(0)" aria-haspopup="true" aria-expanded="false">About Us</a>
+            {{ request()->is(
+                'our-mission','objective','governance',
+                'srila-prabhupada-life-story','krishna-life-story',
+                'chaitanya-mahaprabhu','bhagavad-gita','krishna-consciousness',
+                'blogs','gallery-images'
+            ) ? 'active' : '' }}" href="javascript:void(0)" aria-haspopup="true" aria-expanded="false">About Us</a>
 
                     <ul class="dropdown-menu" aria-label="About Us sub-menu">
                         <li class="dropdown-submenu">
@@ -878,12 +1327,12 @@
                 </li>
                 <li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle
-                {{ request()->is(
-                    'gita-life-course','secrets-of-life','gita-advance-course',
-                    'gita-shloka-course','spiritual-retreat','folk','basilwoods-juniors-preschool',
-                    'kids-club','volunteer','heritage-fest','krishna-shringa','dham-yatra',
-                    'gita-daan','gita-for-youth'
-                ) ? 'active' : '' }}" href="javascript:void(0)" aria-haspopup="true" aria-expanded="false">Activities</a>
+            {{ request()->is(
+                'gita-life-course','secrets-of-life','gita-advance-course',
+                'gita-shloka-course','spiritual-retreat','folk','basilwoods-juniors-preschool',
+                'kids-club','volunteer','heritage-fest','krishna-shringa','dham-yatra',
+                'gita-daan','gita-for-youth'
+            ) ? 'active' : '' }}" href="javascript:void(0)" aria-haspopup="true" aria-expanded="false">Activities</a>
 
                     <ul class="dropdown-menu" aria-label="About Us sub-menu">
                         <li class="dropdown-submenu">
@@ -906,7 +1355,8 @@
                         <li><a href="{{ route('folk') }}"
                                 class="dropdown-item {{ request()->routeIs('folk') ? 'active' : '' }}">For Youth</a></li>
                         <li><a href="{{ route('gita-for-youth') }}"
-                                class="dropdown-item {{ request()->routeIs('gita-for-youth') ? 'active' : '' }}">Gita For Youth</a></li>
+                                class="dropdown-item {{ request()->routeIs('gita-for-youth') ? 'active' : '' }}">Gita For Youth</a>
+                        </li>
                         <li><a href="{{ route('volunteer') }}"
                                 class="dropdown-item {{ request()->routeIs('volunteer') ? 'active' : '' }}">Become Volunteer</a>
                         </li>
@@ -919,13 +1369,17 @@
                     </ul>
                 </li>
 
+
+
+
+
                 <li class="nav-item"><a href="{{ route('our-centers') }}"
                         class="nav-link {{ request()->routeIs('our-centers') ? 'active' : '' }}">Our Centers</a></li>
                 <li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle
-                {{ request()->is(
-                    'checkout/11','checkout/12','checkout/13','checkout/14','checkout/15','deepotsava','annadaan-seva'
-                ) ? 'active' : '' }}" href="javascript:void(0)" aria-haspopup="true" aria-expanded="false">Donate</a>
+            {{ request()->is(
+                'checkout/11','checkout/12','checkout/13','checkout/14','checkout/15','deepotsava','annadaan-seva'
+            ) ? 'active' : '' }}" href="javascript:void(0)" aria-haspopup="true" aria-expanded="false">Donate</a>
 
                     <ul class="dropdown-menu">
 
@@ -989,83 +1443,141 @@
             <a href="{{ route('annadaan-seva') }}" class="btn-blue">Donate</a>
 
         </div>
+
+        <!-- BACKDROP: right 20% click-to-close area -->
+        <div class="mobile-backdrop" id="mobileBackdrop" aria-hidden="true"></div>
     </nav>
 
     <script>
+        /*
+  Unified script:
+  - toggles drawer open/close (hamburger -> X)
+  - opens/closes submenus on mobile (accordion)
+  - backdrop and outside-click close
+  - Escape key closes
+  - prevents body scroll when open
+*/
         (function() {
             const MOBILE_BREAKPOINT = 991;
+            const collapse = document.getElementById('navbarCollapse');
+            const backdrop = document.getElementById('mobileBackdrop');
+            const toggler = document.querySelector('.navbar-toggler');
 
+            // helper
             function isMobile() {
                 return window.innerWidth <= MOBILE_BREAKPOINT;
             }
 
+            function openDrawer() {
+                collapse.classList.add('show');
+                backdrop.classList.add('active');
+                toggler.classList.add('open');
+                document.body.classList.add('nav-drawer-open');
+                toggler.setAttribute('aria-expanded', 'true');
+            }
+
+            function closeDrawer() {
+                collapse.classList.remove('show');
+                backdrop.classList.remove('active');
+                toggler.classList.remove('open');
+                document.body.classList.remove('nav-drawer-open');
+                toggler.setAttribute('aria-expanded', 'false');
+                // close any open submenus
+                collapse.querySelectorAll('.dropdown-menu.show').forEach(dm => dm.classList.remove('show'));
+            }
+
+            // toggler click (we avoid bootstrap data-bs toggle on mobile)
+            toggler.addEventListener('click', function(ev) {
+                if (!isMobile()) {
+                    // let bootstrap handle desktop if it's loaded
+                    return;
+                }
+                ev.preventDefault();
+                if (collapse.classList.contains('show')) closeDrawer();
+                else openDrawer();
+            });
+
+            // backdrop click closes
+            backdrop.addEventListener('click', function() {
+                closeDrawer();
+            });
+
+            // click outside drawer closes as robust fallback
             document.addEventListener('click', function(e) {
-                // close all open mobile menus if click outside navbar (on mobile)
+                if (!isMobile()) return;
+                if (!collapse.classList.contains('show')) return;
+                // if clicked inside drawer, ignore
+                if (collapse.contains(e.target)) return;
+                // if clicked toggler, ignore (toggler handler already)
+                if (toggler.contains(e.target)) return;
+                // otherwise close
+                closeDrawer();
+            }, {
+                passive: true
+            });
+
+            // mobile submenu accordion behavior
+            document.addEventListener('click', function(e) {
                 if (!isMobile()) return;
 
-                const navbar = document.querySelector('.navbar');
-                if (!navbar) return;
+                // target a dropdown-toggle inside nav (top-level or submenu)
+                const toggle = e.target.closest('.dropdown-toggle');
+                if (!toggle) return;
 
-                if (!navbar.contains(e.target)) {
-                    // remove all .show in navbar
-                    navbar.querySelectorAll('.dropdown-menu.show').forEach(function(m) {
-                        m.classList.remove('show');
-                    });
-                    return;
-                }
+                // prevent default navigation
+                e.preventDefault();
 
-                // handle clicks on main dropdown toggles
-                const mainToggle = e.target.closest(
-                    '.nav-item.dropdown > .dropdown-toggle, .nav-item.dropdown > .nav-link.dropdown-toggle');
-                if (mainToggle && isMobile()) {
-                    e.preventDefault();
-                    const parent = mainToggle.closest('.nav-item.dropdown');
-                    const menu = parent.querySelector(':scope > .dropdown-menu');
-                    if (menu) {
-                        const willShow = !menu.classList.contains('show');
-                        // close other sibling dropdowns
-                        parent.parentElement.querySelectorAll(
-                            ':scope > .nav-item.dropdown > .dropdown-menu.show').forEach(function(m) {
-                            m.classList.remove('show');
-                        });
-                        if (willShow) menu.classList.add('show');
-                        else menu.classList.remove('show');
-                    }
-                    return;
-                }
+                // find the related menu (next sibling .dropdown-menu)
+                let menu = toggle.nextElementSibling;
+                if (!menu || !menu.classList.contains('dropdown-menu')) return;
 
-                // handle clicks on submenu toggles (Philosophy / Media)
-                const submenuToggle = e.target.closest('.dropdown-submenu > .dropdown-item.dropdown-toggle');
-                if (submenuToggle && isMobile()) {
-                    e.preventDefault();
-                    const submenu = submenuToggle.nextElementSibling;
-                    if (submenu) {
-                        const willShow = !submenu.classList.contains('show');
-                        // close sibling submenus in same level
-                        const parentMenu = submenuToggle.closest('.dropdown-menu');
-                        parentMenu.querySelectorAll(':scope > .dropdown-submenu > .dropdown-menu.show').forEach(
-                            function(m) {
-                                m.classList.remove('show');
-                            });
-                        if (willShow) submenu.classList.add('show');
-                        else submenu.classList.remove('show');
-                    }
-                    return;
-                }
+                // toggle it (close other open siblings at same level)
+                const parentMenu = toggle.closest('.dropdown-menu') || collapse;
+                parentMenu.querySelectorAll(':scope > .dropdown-submenu > .dropdown-menu.show, :scope > .dropdown-menu.show, :scope > .dropdown-submenu > .dropdown-menu.show').forEach(m => {
+                    if (m !== menu) m.classList.remove('show');
+                });
 
-                // clicks on normal links will follow naturally
+                menu.classList.toggle('show');
             });
 
-            // optional: close mobile menus on window resize to desktop
+            // keyboard: Esc closes
+            document.addEventListener('keydown', function(e) {
+                if (e.key === 'Escape' && collapse.classList.contains('show')) {
+                    closeDrawer();
+                }
+            });
+
+            // resize: if switching to desktop, ensure closed
             window.addEventListener('resize', function() {
                 if (!isMobile()) {
-                    document.querySelectorAll('.dropdown-menu.show').forEach(function(m) {
-                        m.classList.remove('show');
-                    });
+                    // allow bootstrap to show collapse if used, but ensure our classes removed
+                    collapse.classList.remove('show');
+                    backdrop.classList.remove('active');
+                    toggler.classList.remove('open');
+                    document.body.classList.remove('nav-drawer-open');
                 }
             });
+
+            // accessibility: ensure focus isn't lost (basic)
+            // When opening, focus first focusable element inside drawer
+            const observer = new MutationObserver(function() {
+                if (collapse.classList.contains('show')) {
+                    const firstLink = collapse.querySelector('a, button, input, [tabindex]:not([tabindex="-1"])');
+                    if (firstLink) firstLink.focus();
+                }
+            });
+            observer.observe(collapse, {
+                attributes: true,
+                attributeFilter: ['class']
+            });
+
         })();
     </script>
+
+
+
+
+
 
     @yield('content')
 
@@ -1131,36 +1643,23 @@
                     <h5 class="footer-title">Join Our Newsletter</h5>
 
                     <form id="newsletter-form">
-                        <div class="mb-3">
-                            <input type="text" class="footer-input" placeholder="Name" required>
-                        </div>
-
-                        <div class="mb-3">
-                            <input type="email" class="footer-input" placeholder="Email" required>
-                        </div>
-
-                        <div class="mb-3">
-                            <input type="tel" class="footer-input" placeholder="Mobile Number" required>
-                        </div>
-
-                        <!-- DATE FIELD -->
-                        <div class="mb-3">
-                            <input type="date" id="dob" class="footer-input" placeholder="dd/mm/yyyy" required>
-                        </div>
+                        <div class="mb-3"><input type="text" class="footer-input" placeholder="Name"></div>
+                        <div class="mb-3"><input type="email" class="footer-input" placeholder="Email"></div>
+                        <div class="mb-3"><input type="tel" class="footer-input" placeholder="Mobile Number"></div>
+                        <div class="mb-3"><input type="date" class="footer-input"></div>
 
                         <div class="form-check mb-3">
-                            <input class="form-check-input" type="checkbox" id="agree" required>
+                            <input class="form-check-input" type="checkbox" id="agree">
                             <label class="form-check-label footer-agree" for="agree">
                                 I agree to <a href="#">Terms & Conditions</a>,
                                 <a href="#">Privacy Policy</a> & receive updates.
                             </label>
                         </div>
 
-                        <button type="submit" class="footer-submit-btn">SUBSCRIBE</button>
+                        <button type="submit" class="footer-submit-btn">
+                            SUBSCRIBE
+                        </button>
                     </form>
-
-
-
                 </div>
 
             </div>
@@ -1306,8 +1805,6 @@
     </style>
 
 
-
-
     <div class="container-fluid copyright-bar">
         <div class="container">
             <div class="row">
@@ -1444,14 +1941,67 @@
             color: #0d6efd;
             text-decoration: none;
         }
+
+        /* Button position + style */
+        .back-to-top-circle {
+            position: fixed;
+            bottom: 30px;
+            right: 30px;
+            width: 55px;
+            height: 55px;
+            background: transparent;
+            border: none;
+            cursor: pointer;
+            border-radius: 50%;
+            z-index: 9999;
+            display: none;
+            align-items: center;
+            justify-content: center;
+        }
+
+        /* Background circle */
+        .bg-circle {
+            fill: none;
+            stroke: #1f7bd8;
+            stroke-width: 3;
+        }
+
+        /* Animated progress circle */
+        .arrow-up {
+            position: absolute;
+            color: #1f7bd8;
+            /* updated */
+            font-size: 22px;
+            font-weight: bold;
+            z-index: 5;
+        }
+
+        .progress-circle {
+            fill: none;
+            stroke: #ffc107;
+            /* updated */
+            stroke-width: 3;
+            stroke-dasharray: 100;
+            stroke-dashoffset: 100;
+            transform: rotate(-90deg);
+            transform-origin: center;
+        }
     </style>
 
     @include('chatbot')
 
 
 
-    <a href="#" class="btn btn-lg btn-primary btn-lg-square rounded-circle back-to-top"><i
-            class="bi bi-arrow-up"></i></a>
+    <button id="backToTopBtn"
+        class="back-to-top-circle"
+        aria-label="scroll to top">
+        <svg width="50" height="50" viewBox="0 0 36 36">
+            <circle class="bg-circle" cx="18" cy="18" r="16" />
+            <circle class="progress-circle" cx="18" cy="18" r="16" />
+        </svg>
+        <span class="arrow-up">↑</span>
+    </button>
+
     <script src="https://unpkg.com/@lottiefiles/dotlottie-wc@0.8.5/dist/dotlottie-wc.js" type="module"></script>
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
@@ -1504,6 +2054,35 @@
             });
         });
     </script>
+    <script>
+        const btn = document.getElementById("backToTopBtn");
+        const progressCircle = document.querySelector(".progress-circle");
+        const maxScroll = document.documentElement.scrollHeight - window.innerHeight;
+
+        window.addEventListener("scroll", () => {
+            const scrollVal = window.scrollY;
+
+            // show button after 5% scroll
+            if (scrollVal > window.innerHeight * 0.05) {
+                btn.style.display = "flex";
+            } else {
+                btn.style.display = "none";
+            }
+
+            // progress animation
+            const progress = scrollVal / maxScroll;
+            const offset = 100 - progress * 100;
+            progressCircle.style.strokeDashoffset = offset;
+        });
+
+        btn.addEventListener("click", () => {
+            window.scrollTo({
+                top: 0,
+                behavior: "smooth"
+            });
+        });
+    </script>
+
 
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 

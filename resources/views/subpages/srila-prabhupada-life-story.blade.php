@@ -39,7 +39,7 @@ Founder-Ācārya of ISKCON. Learn how he spread Krishna Consciousness worldwide 
 
 <style>
     .life-section {
-        padding: 80px 0;
+        padding: 40px 0;
     }
 
     .life-section:nth-child(even) {
@@ -49,7 +49,7 @@ Founder-Ācārya of ISKCON. Learn how he spread Krishna Consciousness worldwide 
     .life-title {
         font-size: 2.3rem;
         font-weight: 700;
-        color: #c2185b;
+        color: #1f7bd8;
         margin-bottom: 1.5rem;
         text-transform: uppercase;
         letter-spacing: 1px;
@@ -73,12 +73,18 @@ Founder-Ācārya of ISKCON. Learn how he spread Krishna Consciousness worldwide 
         margin: 0 auto 40px auto;
         border-radius: 5px;
     }
+
+    .main-title {
+        font-size: 36px;
+        font-weight: 700;
+        color: #1f7bd8;
+    }
 </style>
 
 <!-- Hero Section -->
 <section class="text-center bg-light py-5" data-aos="fade-down">
     <div class="container">
-        <h1 class="fw-bold display-4 text-dark">Śrīla Prabhupāda – Life Story</h1>
+        <h1 class="fw-bold display-4 main-title">Śrīla Prabhupāda – Life Story</h1>
         <p class="lead text-muted mt-3">The Divine Journey of His Divine Grace A.C. Bhaktivedanta Swami Prabhupāda,
             Founder-Ācārya of ISKCON</p>
         <div class="divider"></div>

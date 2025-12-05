@@ -23,8 +23,8 @@
     /* ... (Your existing CSS styles go here, no changes needed) ... */
     #chatbot-container {
         position: fixed;
-        bottom: 90px;
-        right: 25px;
+        bottom: 25px;
+        left: 25px;
         z-index: 99;
     }
 
