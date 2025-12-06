@@ -218,11 +218,47 @@
 }
 
 .page-header {
-  background: url(https://hkmdehradun.org/assets/krishna.jpg);
-  background-position: top;
-  background-repeat: no-repeat;
-  background-size: cover;
+  position: relative !important;
+  background-image: url("https://hkmdehradun.org/assets/krishna.jpg") !important;
+  background-position: top center !important;
+  background-repeat: no-repeat !important;
+  background-size: cover !important;
+  min-height: 260px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 3rem 0;
+  color: #fff;
+  overflow: hidden;
+  z-index: 0;
+
 }
+
+/* Overlay sits above the background but below content */
+.page-header::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.45) !important;
+  z-index: 2;
+  pointer-events: none;
+}
+
+
+.page-header .page-header-inner,
+.page-header .container,
+.page-header .container * {
+  position: relative;
+  z-index: 3 !important;
+}
+
+
+.page-header .display-3 {
+  margin: 0;
+  text-shadow: 0 3px 12px rgba(0, 0, 0, 0.45);
+  font-weight: 600;
+}
+
 
 .page-header .breadcrumb-item+.breadcrumb-item::before {
   color: var(--light);
@@ -234,6 +270,40 @@
   color: var(--light);
 }
 
+.donate-btn1 {
+  display: inline-block;
+  padding: 14px 40px;
+  border: 3px solid #1c92dd;
+  border-radius: 50px;
+  font-weight: 600;
+  text-transform: uppercase;
+  color: #1c92dd;
+  transition: 0.3s;
+  position: relative;
+  overflow: hidden;
+}
+
+.donate-btn1:hover {
+  background: #1c92dd;
+  color: #fff;
+  transform: translateY(-4px);
+}
+
+.donate-btn1::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(120deg, transparent, rgba(255, 255, 255, 0.5), transparent);
+  transition: 0.5s;
+}
+
+.donate-btn1:hover::before {
+  left: 100%;
+}
+
 /*** Section Title ***/
 .section-title {
   position: relative;
@@ -242,7 +312,7 @@
   font-weight: 600;
 }
 
-.section-title::before {
+/* .section-title::before {
   position: absolute;
   content: "";
   width: calc(100% + 80px);
@@ -251,10 +321,9 @@
   left: -40px;
   background: var(--primary);
   z-index: -1;
-}
+} */
 
-.section-title::after {
-  /* overflow: hidden; */
+/* .section-title::after {
   position: absolute;
   content: "";
   width: calc(100% + 112px);
@@ -263,7 +332,7 @@
   left: -60px;
   background: var(--primary);
   z-index: -1;
-}
+} */
 
 .section-title.text-start::before {
   width: calc(100% + 40px);
