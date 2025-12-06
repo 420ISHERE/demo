@@ -19,7 +19,7 @@ Youth Empowerment Club -Folk
 
 </div>
 <div style="display: flex; justify-content: center;">
-  <h3 style="font-size:32px; text-align:center; color:#cba833;">FOLK (Friends of Lord Krishna)</h3>
+  <h3 style="font-size:32px; text-align:center; color: #1c92dd;">FOLK (Friends of Lord Krishna)</h3>
 </div>
 <div class="container my-5">
   <div class="row">
@@ -76,7 +76,7 @@ Youth Empowerment Club -Folk
     <!-- CARD EXAMPLE (repeat for all 4 cards) -->
     <div class="col-md-6">
       <div class="card border-0 shadow-sm h-100 p-3"
-        style="border-left: 5px solid #f7b500;">
+        style="border-left: 5px solid #0057f7;">
 
         <div class="d-flex flex-column flex-md-row align-items-md-start align-items-center">
 
@@ -90,11 +90,11 @@ Youth Empowerment Club -Folk
             <h5 class="fw-bold mb-2">1. Personality Development Course</h5>
 
             <div class="small">
-              <p class="mb-1"><i class="bi bi-check-circle-fill text-warning me-2"></i>Time management & stress handling</p>
-              <p class="mb-1"><i class="bi bi-check-circle-fill text-warning me-2"></i>Emotional intelligence & resilience</p>
-              <p class="mb-1"><i class="bi bi-check-circle-fill text-warning me-2"></i>Character building & leadership</p>
-              <p class="mb-1"><i class="bi bi-check-circle-fill text-warning me-2"></i>Karma, meditation & mind control</p>
-              <p class="mb-1"><i class="bi bi-check-circle-fill text-warning me-2"></i>Real happiness and success</p>
+              <p class="mb-1"><i class="bi bi-check-circle-fill  me-2" style="color: #1c92dd;"></i>Time management & stress handling</p>
+              <p class="mb-1"><i class="bi bi-check-circle-fill  me-2" style="color: #1c92dd;"></i>Emotional intelligence & resilience</p>
+              <p class="mb-1"><i class="bi bi-check-circle-fill  me-2" style="color: #1c92dd;"></i>Character building & leadership</p>
+              <p class="mb-1"><i class="bi bi-check-circle-fill  me-2" style="color: #1c92dd;"></i>Karma, meditation & mind control</p>
+              <p class="mb-1"><i class="bi bi-check-circle-fill  me-2" style="color: #1c92dd;"></i>Real happiness and success</p>
             </div>
           </div>
 
@@ -106,7 +106,7 @@ Youth Empowerment Club -Folk
     <!-- CARD 2 -->
     <div class="col-md-6">
       <div class="card border-0 shadow-sm h-100 p-3"
-        style="border-left: 5px solid #f7b500;">
+        style="border-left: 5px solid #0057f7;">
 
         <div class="d-flex flex-column flex-md-row align-items-md-start align-items-center">
 
@@ -118,11 +118,11 @@ Youth Empowerment Club -Folk
             <h5 class="fw-bold mb-2">2. Weekly Youth Satsangs</h5>
 
             <div class="small">
-              <p class="mb-1"><i class="bi bi-check-circle-fill text-warning me-2"></i>Spiritual discourses</p>
-              <p class="mb-1"><i class="bi bi-check-circle-fill text-warning me-2"></i>Life-changing discussions</p>
-              <p class="mb-1"><i class="bi bi-check-circle-fill text-warning me-2"></i>Q&A with mentors</p>
-              <p class="mb-1"><i class="bi bi-check-circle-fill text-warning me-2"></i>Bhajans & Kirtans</p>
-              <p class="mb-1"><i class="bi bi-check-circle-fill text-warning me-2"></i>Prasadam distribution</p>
+              <p class="mb-1"><i class="bi bi-check-circle-fill  me-2" style="color: #1c92dd;"></i>Spiritual discourses</p>
+              <p class="mb-1"><i class="bi bi-check-circle-fill  me-2" style="color: #1c92dd;"></i>Life-changing discussions</p>
+              <p class="mb-1"><i class="bi bi-check-circle-fill  me-2" style="color: #1c92dd;"></i>Q&A with mentors</p>
+              <p class="mb-1"><i class="bi bi-check-circle-fill  me-2" style="color: #1c92dd;"></i>Bhajans & Kirtans</p>
+              <p class="mb-1"><i class="bi bi-check-circle-fill  me-2" style="color: #1c92dd;"></i>Prasadam distribution</p>
             </div>
           </div>
 
@@ -134,7 +134,7 @@ Youth Empowerment Club -Folk
     <!-- CARD 3 -->
     <div class="col-md-6">
       <div class="card border-0 shadow-sm h-100 p-3"
-        style="border-left: 5px solid #f7b500;">
+        style="border-left: 5px solid #0057f7;">
 
         <div class="d-flex flex-column flex-md-row align-items-md-start align-items-center">
 
@@ -146,10 +146,10 @@ Youth Empowerment Club -Folk
             <h5 class="fw-bold mb-2">3. Retreats, Camps & Seminars</h5>
 
             <div class="small">
-              <p class="mb-1"><i class="bi bi-check-circle-fill text-warning me-2"></i>Vedic lifestyle workshops</p>
-              <p class="mb-1"><i class="bi bi-check-circle-fill text-warning me-2"></i>Meditation & yoga</p>
-              <p class="mb-1"><i class="bi bi-check-circle-fill text-warning me-2"></i>Nature treks & service</p>
-              <p class="mb-1"><i class="bi bi-check-circle-fill text-warning me-2"></i>Group bonding activities</p>
+              <p class="mb-1"><i class="bi bi-check-circle-fill  me-2" style="color: #1c92dd;"></i>Vedic lifestyle workshops</p>
+              <p class="mb-1"><i class="bi bi-check-circle-fill  me-2" style="color: #1c92dd;"></i>Meditation & yoga</p>
+              <p class="mb-1"><i class="bi bi-check-circle-fill  me-2" style="color: #1c92dd;"></i>Nature treks & service</p>
+              <p class="mb-1"><i class="bi bi-check-circle-fill  me-2" style="color: #1c92dd;"></i>Group bonding activities</p>
             </div>
           </div>
 
@@ -161,7 +161,7 @@ Youth Empowerment Club -Folk
     <!-- CARD 4 -->
     <div class="col-md-6">
       <div class="card border-0 shadow-sm h-100 p-3"
-        style="border-left: 5px solid #f7b500;">
+        style="border-left: 5px solid #0057f7;">
 
         <div class="d-flex flex-column flex-md-row align-items-md-start align-items-center">
 
@@ -253,7 +253,7 @@ Youth Empowerment Club -Folk
     <!-- First Row WITH gap between columns -->
     <div class="row my-4 g-4">
       <div class="col-md-6">
-        <div class="d-flex shadow bg-white rounded h-100" style="border-bottom:2px solid #f7b500;">
+        <div class="d-flex shadow bg-white rounded h-100" style="border-bottom:2px solid #0057f7;">
           <div class="w-25">
             <img src="https://hkmdehradun.org/assets/images/Test-1.png" class="img-fluid">
           </div>
@@ -264,7 +264,7 @@ Youth Empowerment Club -Folk
       </div>
 
       <div class="col-md-6">
-        <div class="d-flex shadow bg-white rounded h-100" style="border-bottom:2px solid #f7b500;">
+        <div class="d-flex shadow bg-white rounded h-100" style="border-bottom:2px solid #0057f7;">
           <div class="w-25">
             <img src="https://hkmdehradun.org/assets/images/Test-2.png" class="img-fluid">
           </div>
@@ -278,7 +278,7 @@ Youth Empowerment Club -Folk
     <!-- Second Row WITH gap between columns -->
     <div class="row my-4 g-4">
       <div class="col-md-6">
-        <div class="d-flex shadow bg-white rounded h-100" style="border-bottom:2px solid #f7b500;">
+        <div class="d-flex shadow bg-white rounded h-100" style="border-bottom:2px solid #0057f7;">
           <div class="w-25">
             <img src="https://hkmdehradun.org/assets/images/Test-3.png" class="img-fluid">
           </div>
@@ -289,7 +289,7 @@ Youth Empowerment Club -Folk
       </div>
 
       <div class="col-md-6">
-        <div class="d-flex shadow bg-white rounded h-100" style="border-bottom:2px solid #f7b500;">
+        <div class="d-flex shadow bg-white rounded h-100" style="border-bottom:2px solid #0057f7;">
           <div class="w-25">
             <img src="https://hkmdehradun.org/assets/images/Test-4.png" class="img-fluid">
           </div>
@@ -306,7 +306,7 @@ Youth Empowerment Club -Folk
 </div>
 </div>
 
-<div style="background:#ebde5b" class="container-fluid py-5">
+<div style="background:#5ba1eb" class="container-fluid py-5">
   <div class="row justify-content-center">
     <div class="col-md-7 ">
       <h2 style="font-family:sans-serif" class="text-center fw-bold fs-1">LET'S GET STARTED</h2>
@@ -324,7 +324,7 @@ Youth Empowerment Club -Folk
     <div class="col-md-6 text-center"> <a href="{{route('contact')}}">
 
 
-        <button type="button" class="btn btn-danger">Lets's Begin!</button> </a>
+        <button type="button" class="donate-btn1">Lets's Begin!</button> </a>
     </div>
   </div>
 

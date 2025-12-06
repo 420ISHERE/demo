@@ -6,7 +6,7 @@ activities inspired by the teachings of the Bhagavad Gita and Srimad Bhagavatam.
 
 @section('content')
 <div class="container my-5">
-    <h1 class="text-center mb-4">Krishna Consciousness</h1>
+    <h1 class="text-center mb-4" style="color: #1c92dd;">Krishna Consciousness</h1>
 
     <p>
         Krishna consciousness, also known as the Hare Krishna movement, is a spiritual practice that has gained
@@ -23,7 +23,7 @@ activities inspired by the teachings of the Bhagavad Gita and Srimad Bhagavatam.
         this profound spiritual path.
     </p>
 
-    <h2>The Core Principle of Krishna Consciousness</h2>
+    <h2 style="color: #1c92dd;" style="color: #1c92dd;">The Core Principle of Krishna Consciousness</h2>
     <p>
         The core principle of Krishna consciousness is the idea that we are all eternal spiritual beings, and that our
         true nature is one of love
@@ -32,7 +32,7 @@ activities inspired by the teachings of the Bhagavad Gita and Srimad Bhagavatam.
         acts of service, we can reconnect with our spiritual nature and experience true fulfillment and happiness.
     </p>
 
-    <h2>Resources for Learning and Practice</h2>
+    <h2 style="color: #1c92dd;" style="color: #1c92dd;">Resources for Learning and Practice</h2>
     <p>
         At <strong>harekrishnamandir.org</strong>, we offer a variety of resources to help people learn and practice the
         principles of Krishna consciousness.
@@ -47,7 +47,7 @@ activities inspired by the teachings of the Bhagavad Gita and Srimad Bhagavatam.
         devotional service.
     </p>
 
-    <h2>The Power of Chanting</h2>
+    <h2 style="color: #1c92dd;">The Power of Chanting</h2>
     <p>
         One of the key practices of Krishna consciousness is the chanting of the Hare Krishna mantra.
         This mantra is a powerful tool for spiritual transformation, and is believed to help awaken the love of God
@@ -56,7 +56,7 @@ activities inspired by the teachings of the Bhagavad Gita and Srimad Bhagavatam.
         and meditation.
     </p>
 
-    <h2>Service and Compassion</h2>
+    <h2 style="color: #1c92dd;">Service and Compassion</h2>
     <p>
         Another important aspect of Krishna consciousness is the idea of <em>seva</em>, or selfless service.
         At <strong>harekrishnamandir.org</strong>, we are committed to serving the community and making a positive
@@ -65,7 +65,7 @@ activities inspired by the teachings of the Bhagavad Gita and Srimad Bhagavatam.
         programs.
     </p>
 
-    <h2>Festivals and Celebrations</h2>
+    <h2 style="color: #1c92dd;">Festivals and Celebrations</h2>
     <p>
         Throughout the year, we also organize various festivals and events that provide an opportunity for devotees and
         the wider community
@@ -75,7 +75,7 @@ activities inspired by the teachings of the Bhagavad Gita and Srimad Bhagavatam.
         are highlights of the year for many devotees.
     </p>
 
-    <h2>Join Us on the Path of Devotion</h2>
+    <h2 style="color: #1c92dd;">Join Us on the Path of Devotion</h2>
     <p>
         If you are interested in learning more about Krishna consciousness and the services and events offered by
         <strong>harekrishnamandir.org</strong>, we invite you to explore our website and connect with us.
@@ -83,7 +83,7 @@ activities inspired by the teachings of the Bhagavad Gita and Srimad Bhagavatam.
         towards spiritual growth and enlightenment.
     </p>
 
-    <h2>Conclusion</h2>
+    <h2 style="color: #1c92dd;">Conclusion</h2>
     <p>
         In conclusion, Krishna consciousness is a powerful and transformative spiritual path that offers a unique
         approach to spiritual growth and self-realization.

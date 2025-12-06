@@ -524,7 +524,7 @@ Hare Krishna Movement Dehradun
                                         Hare Krishan Mandir Dehradun.
                                     </p>
 
-                                    <a href="https://harekrishnamandir.org/gau-seva" target="_blank"
+                                    <a href="{{ route('annadaan-seva') }}"
                                         class="donate-btn1">
                                         Donate Now
                                     </a>

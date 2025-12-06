@@ -1245,19 +1245,16 @@
         }
     </style>
 
-    <!-- ---------- NAVBAR: full markup with your routes/content preserved ---------- -->
     <nav class="navbar navbar-expand-lg navbar-light sticky-top">
         <a href="{{ route('home') }}" class="navbar-brand d-flex align-items-center">
             <img src="https://hkmdehradun.org/assets/10/HKM-Dehradun-Logo-1024x617.jpg" style="height: 60px;">
         </a>
 
-        <!-- toggler: unchanged aria attributes but custom markup and no data-bs toggling -->
         <button class="navbar-toggler" type="button" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
             <span class="hamburger" aria-hidden="true"></span>
         </button>
 
         <div class="collapse navbar-collapse" id="navbarCollapse">
-            <!-- Mobile top logo (inside drawer) -->
             <img src="https://hkmdehradun.org/assets/10/HKM-Dehradun-Logo-1024x617.jpg" class="mobile-logo d-lg-none" alt="logo">
 
             <ul class="navbar-nav ms-auto">
@@ -1363,16 +1360,8 @@
                         <li><a href="{{ route('gita-daan') }}"
                                 class="dropdown-item {{ request()->routeIs('gita-daan') ? 'active' : '' }}">Bhagavad Gita Book Distribution</a>
                         </li>
-
-
-
                     </ul>
                 </li>
-
-
-
-
-
                 <li class="nav-item"><a href="{{ route('our-centers') }}"
                         class="nav-link {{ request()->routeIs('our-centers') ? 'active' : '' }}">Our Centers</a></li>
                 <li class="nav-item dropdown">
@@ -1431,8 +1420,6 @@
                         </li>
 
                     </ul>
-
-
                 </li>
 
                 <li class="nav-item"><a href="{{ route('contact') }}"
@@ -1443,20 +1430,10 @@
             <a href="{{ route('annadaan-seva') }}" class="btn-blue">Donate</a>
 
         </div>
-
-        <!-- BACKDROP: right 20% click-to-close area -->
         <div class="mobile-backdrop" id="mobileBackdrop" aria-hidden="true"></div>
     </nav>
 
     <script>
-        /*
-  Unified script:
-  - toggles drawer open/close (hamburger -> X)
-  - opens/closes submenus on mobile (accordion)
-  - backdrop and outside-click close
-  - Escape key closes
-  - prevents body scroll when open
-*/
         (function() {
             const MOBILE_BREAKPOINT = 991;
             const collapse = document.getElementById('navbarCollapse');
@@ -1804,7 +1781,6 @@
             color: #fff;
         }
 
-        /* Important Links Column */
         .footer-links {
             list-style: none;
             padding: 0;
@@ -1837,7 +1813,6 @@
             box-shadow: 0 0 0 0.1rem rgba(33, 134, 217, 0.2);
         }
 
-        /* Checkbox Text */
         .footer-agree {
             font-size: 0.85rem;
             color: #666;
@@ -1848,7 +1823,6 @@
             font-weight: 600;
         }
 
-        /* Subscribe Button */
         .footer-submit-btn {
             width: 100%;
             padding: 12px;
@@ -1870,7 +1844,6 @@
     <script>
         document.addEventListener("DOMContentLoaded", () => {
 
-            /* ------------------ MOBILE NUMBER VALIDATION ------------------- */
             const mobileInput = document.getElementById("newsletter-mobile");
             const mobileError = document.getElementById("mobile-error");
 
@@ -1886,7 +1859,6 @@
                 }
             });
 
-            /* ------------------ EMAIL VALIDATION ------------------- */
             const emailInput = document.getElementById("newsletter-email");
             const emailError = document.getElementById("email-error");
 
@@ -1903,14 +1875,12 @@
             });
 
 
-            /* ------------------ DATE INPUT VALIDATION ------------------- */
             const dateInput = document.getElementById("newsletter-date");
             const dateError = document.getElementById("date-error");
 
             dateInput.addEventListener("input", function() {
                 let value = this.value.replace(/\D/g, ""); // Only numbers
 
-                // Auto-format dd/mm/yyyy
                 if (value.length >= 3 && value.length <= 4) {
                     value = value.replace(/(\d{2})(\d{1,2})/, "$1/$2");
                 } else if (value.length >= 5) {
@@ -1957,9 +1927,6 @@
         });
     </script>
 
-
-
-
     <div class="container-fluid copyright-bar">
         <div class="container">
             <div class="row">
@@ -1989,10 +1956,8 @@
 
         </div>
     </div>
-    <!-- Loader End -->
-    <!-- Styles -->
+
     <style>
-        /* Fullscreen container */
         .loader-cont {
             position: fixed;
             top: 0;

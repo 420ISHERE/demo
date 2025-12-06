@@ -10,7 +10,7 @@ Our Centers
 <!-- Page Header Start -->
 <div class="container-fluid page-header py-5 mb-5">
     <div class="container text-center py-5">
-        <h1 class="display-3 text-white mb-4 ">Our Centers</h1>
+        <h1 class="display-3 mb-4 " style="color: #1c92dd;">Our Centers</h1>
 
     </div>
 </div>
@@ -217,7 +217,7 @@ Our Centers
 
         <!-- Button -->
         <div class="text-center mt-4">
-            <a class="btn btn-warning button" href="/list/">Click here to see the list of all Centers.</a>
+            <a class="donate-btn1" href="/list/">Click here to see the list of all Centers.</a>
         </div>
 
     </div>

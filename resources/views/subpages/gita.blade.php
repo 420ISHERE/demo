@@ -15,7 +15,7 @@ Gita For Youth
 
         <div class="col">
 
-            <h1 class="fs-3 text-center mt-5">Gita For Youth | Biggest International Summit</h1>
+            <h1 class="fs-3 text-center mt-5" style="color: #1c92dd;">Gita For Youth | Biggest International Summit</h1>
         </div>
     </div>
 
@@ -280,7 +280,7 @@ Gita For Youth
 
 
                     <div class="col-12 pb-5">
-                        <button class="btn btn-secondary rounded-pill py-3 px-5 button" type="submit">Register Now
+                        <button class="donate-btn1" type="submit">Register Now
                         </button>
                     </div>
             </div>
@@ -301,7 +301,7 @@ Gita For Youth
                 <img src="https://hkmhyderabad.org/assets/website/images/activities/mantram.jpg"
                     class="card-img-top rounded-top" alt="Mantra Meditation">
                 <div class="card-footer text-center bg-white">
-                    <h5 class="mb-0 text-warning">Mantra Meditation</h5>
+                    <h5 class="mb-0" style="color: #1c92dd;">Mantra Meditation</h5>
                 </div>
             </div>
         </div>
@@ -311,7 +311,7 @@ Gita For Youth
                 <img src="https://hkmhyderabad.org/assets/website/images/activities/course.jpg"
                     class="card-img-top rounded-top" alt="Course Certification">
                 <div class="card-footer text-center bg-white">
-                    <h5 class="mb-0 text-warning">Course Certification</h5>
+                    <h5 class="mb-0 " style="color: #1c92dd;">Course Certification</h5>
                 </div>
             </div>
         </div>
@@ -321,7 +321,7 @@ Gita For Youth
                 <img src="https://hkmhyderabad.org/assets/website/images/activities/life-coach.jpg"
                     class="card-img-top rounded-top" alt="Life Coach">
                 <div class="card-footer text-center bg-white">
-                    <h5 class="mb-0 text-warning">Life Coach</h5>
+                    <h5 class="mb-0 " style="color: #1c92dd;">Life Coach</h5>
                 </div>
             </div>
         </div>
@@ -333,7 +333,7 @@ Gita For Youth
     <hr class="my-5">
 
     <div class="text-center mb-4">
-        <h3 class="text-warning fw-bold d-inline-block mb-1">About The Course</h3>
+        <h3 class=" fw-bold d-inline-block mb-1" style="color: #1c92dd;">About The Course</h3>
         <p class="mb-0">From the battlefield of Kurukshetra</p>
     </div>
 
@@ -413,7 +413,7 @@ Gita For Youth
 
     <!-- Course Modules Heading -->
     <div class="text-center mb-4">
-        <h3 class="text-warning fw-bold d-inline-block mb-1">Course Modules</h3>
+        <h3 class="fw-bold d-inline-block mb-1" style="color: #1c92dd;">Course Modules</h3>
     </div>
 
     <!-- Image Grid -->

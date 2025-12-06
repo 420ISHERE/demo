@@ -70,6 +70,7 @@ Route::controller(SubPagesController::class)->group(function () {
      Route::get('/gita-shloka-course', 'gitaShlokaCourse')->name("gita-shloka-course");
      Route::get('/spiritual-retreat', 'spiritualRetreat')->name("spiritual-retreat");
      Route::get('/gita-daan', 'gitaDaan')->name("gita-daan");
+     Route::get('/gau-seva', 'GauSeva')->name("gau-seva");
 });
 
 

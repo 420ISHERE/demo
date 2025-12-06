@@ -18,7 +18,7 @@ Volunteer Registration
 
 
         <div class="col-md-10 mx-auto my-5 px-md-4 rounded" style="background-color:rgb(64,74,61);color:white">
-            <h1 class="fs-3 text-center mt-5 mb-4 text-white ">Register to serve with HKM Dehradun</h1>
+            <h1 class="fs-3 text-center mt-5 mb-4  " style="color: #1c92dd;">Register to serve with HKM Dehradun</h1>
             <p> As Lord Krishna says in Bhagavad-Gita 18.69, there is no one dearer to Him than one who shares His
                 message with others. </p>
             <p>
@@ -285,7 +285,7 @@ Volunteer Registration
                     </div>
 
                     <div class="col-12">
-                        <button class="btn btn-secondary rounded-pill py-3 px-5 button" type="submit">Send
+                        <button class="donate-btn1" type="submit">Send
                             Message</button>
                     </div>
                 </div>

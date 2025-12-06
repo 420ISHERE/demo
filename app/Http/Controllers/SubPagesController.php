@@ -138,11 +138,6 @@ class SubPagesController extends Controller
         return view('subpages.fault');
     }
 
-    public function donation()
-    {
-        return view('subpages.donation');
-    }
-
     public function deepotsava()
     {
         return view('subpages.deepotsava');
@@ -206,5 +201,10 @@ class SubPagesController extends Controller
     public function gitaDaan()
     {
         return view('subpages.gita-daan');
+    }
+
+    public function GauSeva()
+    {
+        return view('subpages.gau-seva');
     }
 }

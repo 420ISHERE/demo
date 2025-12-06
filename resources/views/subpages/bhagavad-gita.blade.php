@@ -43,40 +43,16 @@ guide to inner peace and self-realization.')
 
     /* Content Section */
     .content-section {
-        background: linear-gradient(to bottom, #fffdf7, #fdf8ee);
-        border-top: 5px solid #f0c36d;
+        background: linear-gradient(to bottom, #f7fcff, #eef2fd);
+        border-top: 5px solid #6dadf0;
         padding: 2rem 0;
         position: relative;
     }
 
-    /* Decorative Background Glow */
-    /* .content-section::before {
-        content: '';
-        position: absolute;
-        top: -80px;
-        left: -80px;
-        width: 250px;
-        height: 250px;
-        background: radial-gradient(circle, rgba(240, 195, 109, 0.15), transparent 70%);
-        z-index: 0;
-    }
-
-    .content-section::after {
-        content: '';
-        position: absolute;
-        bottom: -100px;
-        right: -100px;
-        width: 250px;
-        height: 250px;
-        background: radial-gradient(circle, rgba(240, 195, 109, 0.15), transparent 70%);
-        z-index: 0;
-    } */
-
-    /* Text Styling */
     .content-section h2 {
         font-size: 2rem;
         font-weight: 700;
-        color: #8b5e00;
+        color: #001d8b;
         margin-top: 2.5rem;
         animation: fadeInLeft 1.2s ease-in-out;
     }
@@ -84,7 +60,7 @@ guide to inner peace and self-realization.')
     .content-section h3 {
         font-size: 1.5rem;
         font-weight: 600;
-        color: #cc8800;
+        color: #0046cc;
         margin-top: 1.5rem;
     }
 
@@ -103,8 +79,8 @@ guide to inner peace and self-realization.')
 
     /* Highlight Box */
     .highlight-box {
-        background: linear-gradient(135deg, #fff7e6, #fef4df);
-        border-left: 6px solid #e5a100;
+        background: linear-gradient(135deg, #e6f6ff, #dff0fe);
+        border-left: 6px solid #007be5;
         padding: 1.8rem;
         margin-top: 2rem;
         border-radius: 0.6rem;
@@ -206,7 +182,7 @@ guide to inner peace and self-realization.')
 <!-- Hero Section -->
 <section class="hero-section">
     <div class="hero-content">
-        <h1>The Bhagavad-Gita: Unveiling the Song of God</h1>
+        <h1 style="color: #1c92dd;">The Bhagavad-Gita: Unveiling the Song of God</h1>
         <p class="hero-text-box">“The divine dialogue between Lord Krishna and Arjuna — a timeless guide to life, duty, and liberation.”</p>
     </div>
 </section>

@@ -79,7 +79,7 @@ the incarnation of Lord Krishna who spread the Sankirtana movement and the chant
     }
 
     .highlight {
-        color: #d97706;
+        color: #1c92dd;
         font-weight: bold;
     }
 
@@ -138,7 +138,7 @@ the incarnation of Lord Krishna who spread the Sankirtana movement and the chant
 <section class="hero-section wow fadeIn">
     <div class="container">
 
-        <h1 class="fade-in hero-text-box" style="color: #d97706;">Sri Chaitanya Mahaprabhu</h1>
+        <h1 class="fade-in hero-text-box" style="color: #1c92dd;">Sri Chaitanya Mahaprabhu</h1>
 
         <p class="lead fade-in mt-3 hero-text-box">
             The Golden Avatar of Lord Krishna who revealed the path of love and devotion
