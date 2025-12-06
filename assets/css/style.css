@@ -281,7 +281,6 @@
   transition: 0.3s;
   position: relative;
   overflow: hidden;
-  background: #ffffff !important;
 }
 
 .donate-btn1:hover {
