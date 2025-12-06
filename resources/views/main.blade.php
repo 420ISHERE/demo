@@ -524,7 +524,7 @@
             <div class="col-lg-6 text-end">
                 <div class="h-100 bg-secondary d-inline-flex align-items-center text-dark py-2 px-4">
                     <span class="me-2 fw-semi-bold"><i class="fa fa-phone-alt me-2"></i>Call Us:</span>
-                    <span><a href="tel:8121151508" style="color: #404A3D;">+91 8121151508</a></span>
+                    <span><a href="tel:8123037733" style="color: #404A3D;">+91 8123037733</a></span>
                 </div>
             </div>
         </div>
@@ -1584,7 +1584,6 @@
     <footer class="container-fluid footer-bg py-3 text-dark footer position-relative overflow-hidden wow fadeIn"
         data-wow-delay="0.1s">
 
-        <!-- Lottie Background -->
         <!-- <dotlottie-wc src="https://lottie.host/9c5dad69-e0e4-42ce-aaa5-79ffcfbad315/2NDzucYL08.lottie" autoplay loop
             class="footer-lottie"></dotlottie-wc> -->
 
@@ -1597,7 +1596,7 @@
 
                     <p class="footer-list">
                         <i class="fa fa-phone-alt  me-3"></i>
-                        <a href="tel:+918121151508">+91 8121151508</a>
+                        <a href="tel:+918123037733">+91 8123037733</a>
                     </p>
 
                     <p class="footer-list">
@@ -1629,45 +1628,110 @@
                     <h5 class="footer-title">Important Links</h5>
 
                     <ul class="footer-links">
-                        <li><a href="#">About Us</a></li>
-                        <li><a href="#">Become a Monk</a></li>
-                        <li><a href="#">Contact Us</a></li>
-                        <li><a href="#">Terms & Conditions</a></li>
-                        <li><a href="#">Privacy Policy</a></li>
-                        <li><a href="#">Refund Policy</a></li>
+                        <li><a href="{{route('our-mission')}}">About Us</a></li>
+                        <li><a href="{{route('be-a-monk')}}">Become a Monk</a></li>
+                        <li><a href="{{ route('contact') }}">Contact Us</a></li>
+                        <li><a href="{{route('terms-and-conditions')}}">Terms & Conditions</a></li>
+                        <li><a href="{{route('privacy-policy')}}">Privacy Policy</a></li>
+                        <li><a href="{{route('refund-policy')}}">Refund Policy</a></li>
                     </ul>
                 </div>
 
-                <!-- Newsletter Section -->
+                <!-- NEWSLETTER SECTION -->
                 <div class="col-lg-4 col-md-6">
                     <h5 class="footer-title">Join Our Newsletter</h5>
 
-                    <form id="newsletter-form">
-                        <div class="mb-3"><input type="text" class="footer-input" placeholder="Name"></div>
-                        <div class="mb-3"><input type="email" class="footer-input" placeholder="Email"></div>
-                        <div class="mb-3"><input type="tel" class="footer-input" placeholder="Mobile Number"></div>
-                        <div class="mb-3"><input type="date" class="footer-input"></div>
+                    <form id="newsletter-form" novalidate>
 
+                        <!-- Name -->
+                        <div class="mb-3">
+                            <input
+                                type="text"
+                                class="footer-input"
+                                id="newsletter-name"
+                                placeholder="Full Name"
+                                required>
+                        </div>
+
+                        <!-- Email -->
+                        <div class="mb-3">
+                            <input
+                                type="email"
+                                class="footer-input"
+                                id="newsletter-email"
+                                placeholder="Email Address"
+                                inputmode="email"
+                                autocomplete="email"
+                                required>
+                            <small id="email-error" class="text-danger mt-1 d-none">
+                                Please enter a valid email address
+                            </small>
+                        </div>
+
+                        <!-- Mobile Number -->
+                        <div class="mb-3">
+                            <input
+                                type="tel"
+                                class="footer-input"
+                                id="newsletter-mobile"
+                                placeholder="Mobile Number"
+                                inputmode="numeric"
+                                maxlength="10"
+                                autocomplete="tel"
+                                required>
+                            <small id="mobile-error" class="text-danger mt-1 d-none">
+                                Only 10 digit numbers are allowed
+                            </small>
+                        </div>
+
+                        <!-- Date of Birth -->
+                        <div class="mb-3 position-relative">
+                            <input
+                                type="text"
+                                class="footer-input"
+                                id="newsletter-date"
+                                placeholder="dd/mm/yyyy"
+                                maxlength="10"
+                                autocomplete="off"
+                                required>
+                            <small id="date-error" class="text-danger mt-1 d-none">
+                                Please enter a valid date (dd/mm/yyyy)
+                            </small>
+                        </div>
+
+                        <!-- Terms Checkbox -->
                         <div class="form-check mb-3">
-                            <input class="form-check-input" type="checkbox" id="agree">
-                            <label class="form-check-label footer-agree" for="agree">
+                            <input class="form-check-input" type="checkbox" id="newsletter-agree" required>
+                            <label class="form-check-label footer-agree" for="newsletter-agree">
                                 I agree to <a href="#">Terms & Conditions</a>,
-                                <a href="#">Privacy Policy</a> & receive updates.
+                                <a href="#">Privacy Policy</a> & agree to receive updates.
                             </label>
                         </div>
 
-                        <button type="submit" class="footer-submit-btn">
+                        <!-- Submit Button -->
+                        <button type="submit" class="footer-submit-btn w-100">
                             SUBSCRIBE
                         </button>
+
                     </form>
                 </div>
+
 
             </div>
         </div>
 
     </footer>
     <style>
-        /* Footer Background */
+        .footer-input.invalid {
+            border-color: #dc3545 !important;
+            box-shadow: 0 0 0 0.15rem rgba(220, 53, 69, 0.25);
+        }
+
+        #newsletter-form small.text-danger {
+            font-size: 0.80rem;
+        }
+
+
         .footer-bg {
             background: #ffffff;
             border-top: 1px solid #e5e5e5;
@@ -1803,6 +1867,97 @@
             transform: translateY(-3px);
         }
     </style>
+    <script>
+        document.addEventListener("DOMContentLoaded", () => {
+
+            /* ------------------ MOBILE NUMBER VALIDATION ------------------- */
+            const mobileInput = document.getElementById("newsletter-mobile");
+            const mobileError = document.getElementById("mobile-error");
+
+            mobileInput.addEventListener("input", function() {
+                this.value = this.value.replace(/\D/g, ""); // allow only numbers
+
+                if (this.value.length === 10) {
+                    mobileError.classList.add("d-none");
+                    this.classList.remove("invalid");
+                } else {
+                    mobileError.classList.remove("d-none");
+                    this.classList.add("invalid");
+                }
+            });
+
+            /* ------------------ EMAIL VALIDATION ------------------- */
+            const emailInput = document.getElementById("newsletter-email");
+            const emailError = document.getElementById("email-error");
+
+            emailInput.addEventListener("input", function() {
+                const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+
+                if (emailPattern.test(this.value)) {
+                    emailError.classList.add("d-none");
+                    this.classList.remove("invalid");
+                } else {
+                    emailError.classList.remove("d-none");
+                    this.classList.add("invalid");
+                }
+            });
+
+
+            /* ------------------ DATE INPUT VALIDATION ------------------- */
+            const dateInput = document.getElementById("newsletter-date");
+            const dateError = document.getElementById("date-error");
+
+            dateInput.addEventListener("input", function() {
+                let value = this.value.replace(/\D/g, ""); // Only numbers
+
+                // Auto-format dd/mm/yyyy
+                if (value.length >= 3 && value.length <= 4) {
+                    value = value.replace(/(\d{2})(\d{1,2})/, "$1/$2");
+                } else if (value.length >= 5) {
+                    value = value.replace(/(\d{2})(\d{2})(\d{1,4})/, "$1/$2/$3");
+                }
+
+                this.value = value;
+                validateDate();
+            });
+
+            function validateDate() {
+                const dateValue = dateInput.value;
+                const regex = /^(\d{2})\/(\d{2})\/(\d{4})$/;
+
+                if (!regex.test(dateValue)) return showDateError();
+
+                const [_, dd, mm, yyyy] = dateValue.match(regex);
+
+                const day = parseInt(dd);
+                const month = parseInt(mm);
+                const year = parseInt(yyyy);
+
+                if (month < 1 || month > 12) return showDateError();
+
+                const daysInMonth = new Date(year, month, 0).getDate();
+                if (day < 1 || day > daysInMonth) return showDateError();
+
+                if (year < 1900 || year > 2099) return showDateError();
+
+                hideDateError();
+                return true;
+            }
+
+            function showDateError() {
+                dateError.classList.remove("d-none");
+                dateInput.classList.add("invalid");
+            }
+
+            function hideDateError() {
+                dateError.classList.add("d-none");
+                dateInput.classList.remove("invalid");
+            }
+
+        });
+    </script>
+
+
 
 
     <div class="container-fluid copyright-bar">

@@ -39,55 +39,60 @@ Founder-Ācārya of ISKCON. Learn how he spread Krishna Consciousness worldwide 
 
 <style>
     .life-section {
-        padding: 40px 0;
+        padding: 10px 0;
     }
 
-    .life-section:nth-child(even) {
+    /* .life-section:nth-child(even) {
         background-color: #f8f9fa;
-    }
+    } */
 
-    .life-title {
-        font-size: 2.3rem;
+    .main-title {
+        font-size: 34px;
         font-weight: 700;
         color: #1f7bd8;
-        margin-bottom: 1.5rem;
-        text-transform: uppercase;
-        letter-spacing: 1px;
     }
 
     .life-content {
-        font-size: 1.1rem;
-        line-height: 1.8;
-        color: #333;
+        font-size: 18px;
     }
 
     .life-image {
+        width: 50%;
         border-radius: 15px;
         box-shadow: 0 0 25px rgba(0, 0, 0, 0.15);
     }
 
-    .divider {
-        width: 80px;
-        height: 4px;
-        background-color: #c2185b;
-        margin: 0 auto 40px auto;
-        border-radius: 5px;
-    }
 
     .main-title {
         font-size: 36px;
         font-weight: 700;
         color: #1f7bd8;
     }
+
+    /* Reduce title size on mobile */
+    @media (max-width: 576px) {
+        .main-title {
+            font-size: 28px !important;
+            line-height: 1.3;
+        }
+
+        .life-content {
+            font-size: 16px;
+        }
+
+        .life-image {
+            width: 100% !important;
+
+        }
+    }
 </style>
 
 <!-- Hero Section -->
 <section class="text-center bg-light py-5" data-aos="fade-down">
     <div class="container">
-        <h1 class="fw-bold display-4 main-title">Śrīla Prabhupāda – Life Story</h1>
+        <h1 class="fw-bold display-4 main-title">Srila Prabhupada – Life Story</h1>
         <p class="lead text-muted mt-3">The Divine Journey of His Divine Grace A.C. Bhaktivedanta Swami Prabhupāda,
-            Founder-Ācārya of ISKCON</p>
-        <div class="divider"></div>
+            Founder-Acarya of ISKCON</p>
         <img src="{{ asset('assets/images/srila-prabhupada.jpg') }}" class="img-fluid life-image mt-3"
             alt="Srila Prabhupada">
     </div>
@@ -96,7 +101,7 @@ Founder-Ācārya of ISKCON. Learn how he spread Krishna Consciousness worldwide 
 <!-- Childhood -->
 <section class="life-section" data-aos="fade-right">
     <div class="container">
-        <h2 class="life-title text-center">Childhood</h2>
+        <h2 class="main-title text-center">Childhood</h2>
         <p class="life-content">
             Śrīla Prabhupāda was born on <strong>1st September 1896</strong> in <strong>Calcutta (Kolkata)</strong>
             and was named <strong>Abhay Charan De</strong>. His parents, <strong>Gour Mohan De</strong> and
@@ -110,7 +115,7 @@ Founder-Ācārya of ISKCON. Learn how he spread Krishna Consciousness worldwide 
 <!-- Youth and Married Life -->
 <section class="life-section" data-aos="fade-up">
     <div class="container">
-        <h2 class="life-title text-center">Youth and Married Life</h2>
+        <h2 class="main-title text-center">Youth and Married Life</h2>
         <p class="life-content">
             Abhay studied at <strong>Scottish Churches’ College</strong> and supported <strong>Gandhi’s non-cooperation
                 movement</strong>.
@@ -123,7 +128,7 @@ Founder-Ācārya of ISKCON. Learn how he spread Krishna Consciousness worldwide 
 <!-- Meeting His Spiritual Master -->
 <section class="life-section" data-aos="fade-right">
     <div class="container">
-        <h2 class="life-title text-center">Meeting His Spiritual Master</h2>
+        <h2 class="main-title text-center">Meeting His Spiritual Master</h2>
         <p class="life-content">
             In <strong>1922</strong>, Abhay met his spiritual master, <strong>Śrīla Bhaktisiddhānta Sarasvatī
                 Gosvāmī</strong>,
@@ -137,7 +142,7 @@ Founder-Ācārya of ISKCON. Learn how he spread Krishna Consciousness worldwide 
 <!-- Retired Life -->
 <section class="life-section" data-aos="fade-up">
     <div class="container">
-        <h2 class="life-title text-center">Retired Life</h2>
+        <h2 class="main-title text-center">Retired Life</h2>
         <p class="life-content">
             In <strong>1950</strong>, Abhay accepted <em>vānaprastha</em> (retired life) to dedicate himself to
             spiritual pursuits.
@@ -151,7 +156,7 @@ Founder-Ācārya of ISKCON. Learn how he spread Krishna Consciousness worldwide 
 <!-- Renounced Order -->
 <section class="life-section" data-aos="fade-up">
     <div class="container">
-        <h2 class="life-title text-center">Renounced Order of Life</h2>
+        <h2 class="main-title text-center">Renounced Order of Life</h2>
         <p class="life-content">
             In <strong>1959</strong>, he took <strong>sannyāsa</strong> (renunciation) and became known as
             <strong>A.C. Bhaktivedanta Swami</strong>. He translated the <strong>Śrīmad Bhāgavatam</strong> and authored
@@ -166,7 +171,7 @@ Founder-Ācārya of ISKCON. Learn how he spread Krishna Consciousness worldwide 
 <!-- Establishment of ISKCON -->
 <section class="life-section" data-aos="fade-right">
     <div class="container">
-        <h2 class="life-title text-center">Establishment of ISKCON</h2>
+        <h2 class="main-title text-center">Establishment of ISKCON</h2>
         <p class="life-content">
             In <strong>July 1966</strong>, Śrīla Prabhupāda founded the <strong>International Society for Krishna
                 Consciousness (ISKCON)</strong> in New York.
@@ -180,7 +185,7 @@ Founder-Ācārya of ISKCON. Learn how he spread Krishna Consciousness worldwide 
 <!-- Literary Contributions -->
 <section class="life-section" data-aos="fade-up">
     <div class="container">
-        <h2 class="life-title text-center">Literary Contributions</h2>
+        <h2 class="main-title text-center">Literary Contributions</h2>
         <p class="life-content">
             Śrīla Prabhupāda authored over <strong>60 volumes</strong> of Vedic literature and established the
             <strong>Bhaktivedanta Book Trust (BBT)</strong>. He translated Sanskrit and Bengali scriptures with
@@ -193,7 +198,7 @@ Founder-Ācārya of ISKCON. Learn how he spread Krishna Consciousness worldwide 
 <!-- Legacy -->
 <section class="life-section bg-light" data-aos="zoom-in">
     <div class="container text-center">
-        <h2 class="life-title">Legacy</h2>
+        <h2 class="main-title">Legacy</h2>
         <p class="life-content">
             Śrīla Prabhupāda established <strong>108 temples</strong>, initiated <strong>5,000 disciples</strong>, and
             inspired millions

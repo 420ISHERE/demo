@@ -10,8 +10,8 @@ Contact Us
 <div class="container-xxl py-5">
     <div class="container">
         <div class="text-center mx-auto wow fadeInUp" data-wow-delay="0.1s" style="max-width: 500px;">
-            <p class="section-title bg-white text-center text-primary px-3">Contact Us</p>
-            <h1 class="mb-5">If You Have Any Query, Please Contact Us</h1>
+            <h1 class="title">Contact Us</h1>
+            <h4 class="mb-5">If You Have Any Query, Please Contact Us</h4>
         </div>
         <div class="row g-5">
             <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.1s">
@@ -88,7 +88,7 @@ Contact Us
                                         Policy</b></a>.</p>
                         </div>
                         <div class="col-12">
-                            <button class="btn btn-secondary rounded-pill py-3 px-5 button" type="submit">Send
+                            <button class="donate-btn1" type="submit">Send
                                 Message</button>
                         </div>
                     </div>
@@ -111,8 +111,8 @@ Contact Us
                     </div>
                     <div class="ms-3">
                         <h6>Call Us</h6>
-                        <span><a href="tel:8121151508" style="color: #777;">+91
-                                8121151508</a></span>
+                        <span><a href="tel:8123037733" style="color: #777;">+91
+                                8123037733</a></span>
                     </div>
                 </div>
                 <div class="d-flex border-bottom-0 pb-3 mb-3">
@@ -181,6 +181,44 @@ Contact Us
 
     .footer i {
         margin-right: 0px !important;
+    }
+
+    .title {
+        color: #1f7bd8 !important;
+    }
+
+    .donate-btn1 {
+        display: inline-block;
+        padding: 14px 40px;
+        border: 3px solid #1c92dd;
+        border-radius: 50px;
+        font-weight: 600;
+        text-transform: uppercase;
+        color: #1c92dd;
+        transition: 0.3s;
+        position: relative;
+        overflow: hidden;
+    }
+
+    .donate-btn1:hover {
+        background: #1c92dd;
+        color: #fff;
+        transform: translateY(-4px);
+    }
+
+    .donate-btn1::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: -100%;
+        width: 100%;
+        height: 100%;
+        background: linear-gradient(120deg, transparent, rgba(255, 255, 255, 0.5), transparent);
+        transition: 0.5s;
+    }
+
+    .donate-btn1:hover::before {
+        left: 100%;
     }
 </style>
 @endsection

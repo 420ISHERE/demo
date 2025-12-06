@@ -507,7 +507,7 @@ Hare Krishna Movement Dehradun
 
                         <!-- IMAGE -->
                         <div class="thumb">
-                            <img class="cow-img" src="{{   asset('assets/12/cow.png') }}" alt="Help us Protect Cows">
+                            <img class="cow-img" src="{{asset('assets/12/cow.png') }}" alt="Help us Protect Cows">
                         </div>
 
                         <!-- TEXT CONTENT -->
@@ -602,7 +602,7 @@ Hare Krishna Movement Dehradun
         .title {
             font-size: 32px;
             font-weight: 700;
-            color: #0d6efd;
+            color: #1c92dd;
             margin-bottom: 20px;
         }
 
