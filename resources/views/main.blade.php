@@ -1338,9 +1338,9 @@
                             <ul class="dropdown-menu" aria-label="Philosophy sub-menu">
                                 <li><a href="{{ route('gita-life-course') }}"
                                         class="dropdown-item {{ request()->routeIs('gita-life-course') ? 'active' : '' }}">Gita Life Course</a></li>
-                                <li><a href="{{ route('secrets-of-life') }}"
+                                <!-- <li><a href="{{ route('secrets-of-life') }}"
                                         class="dropdown-item {{ request()->routeIs('secrets-of-life') ? 'active' : '' }}">Secrets of Life</a>
-                                </li>
+                                </li> -->
                                 <li><a href="{{ route('gita-advance-course') }}"
                                         class="dropdown-item {{ request()->routeIs('gita-advance-course') ? 'active' : '' }}">Gita Advance Cources</a></li>
                                 <li><a href="{{ route('gita-shloka-course') }}"
