@@ -217,7 +217,7 @@ Our Centers
 
         <!-- Button -->
         <div class="text-center mt-4">
-            <a class="donate-btn1" href="/list/">Click here to see the list of all Centers.</a>
+            <a class="donate-btn1" href="{{ route('list') }}">Click here to see the list of all Centers.</a>
         </div>
 
     </div>
