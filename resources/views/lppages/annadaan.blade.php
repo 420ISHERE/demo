@@ -2,7 +2,7 @@
 
 @section('title', 'Hare Krishna Movement - Dehradun')
 
-@push('styles')
+@stack('styles')
 <link rel="stylesheet" href="{{ asset('assets/css/donationpage.css') }}">
 
 @endpush
