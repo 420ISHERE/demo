@@ -5,7 +5,6 @@
 @stack('styles')
 <link rel="stylesheet" href="{{ asset('assets/css/donationpage.css') }}">
 
-@endpush
 
 @section('content')
 
